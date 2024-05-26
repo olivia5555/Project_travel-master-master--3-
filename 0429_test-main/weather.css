@@ -1,0 +1,252 @@
+.row {
+    background-color: rgb(0, 167, 173);
+    width: 101%;
+}
+
+.header-stamp {
+    /* margin-left: 10px; */
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 1.5px;
+    margin-left: 20px;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    display: flex;
+}
+
+.header-stamp img{
+    width: 80%;
+    border-radius: 10px;
+    
+
+}
+#header-txt1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: auto; 
+    left: -300px;
+    /* border: 2px red solid; */
+    height: 50px;
+    /*或者其他適當的值，如 overflow-x 或 overflow-y */
+}
+
+
+
+.search-container {
+    position: relative;
+    /* 确保父元素是相对定位的 */
+}
+
+#search-input {
+    position: absolute;
+    left: 0px;
+    /* 距离右边 20px */
+    top: 10px;
+    /* 距离顶部 10px */
+    border-radius: 10px;
+}
+#search-icon{
+    /* border: 1px solid red; */
+    position: relative;
+    left: 190px;
+    top: 1px;
+
+}
+
+.header-tag {
+    position: relative;
+    left: 500px;
+    /* margin-top: 12px; */
+    display: flex;
+    align-items: center;
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+}
+
+
+#travelinfo {
+    border-radius: 5px;
+    flex: 2;
+    /* 让输入框填充剩余的空间 */
+    margin-right: 10px;
+    /* 右边距 */
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#travelinfo1 {
+    border-radius: 5px;
+    flex: 2;
+    /* 让输入框填充剩余的空间 */
+    margin-right: 10px;
+    /* 右边距 */
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#travelinfo2 {
+    border-radius: 5px;
+    flex: 2;
+    /* 让输入框填充剩余的空间 */
+    margin-right: 10px;
+    /* 右边距 */
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#travelinfo3 {
+    border-radius: 5px;
+    flex: 2;
+    /* 让输入框填充剩余的空间 */
+    /* margin-right: 10px; */
+    /* 右边距 */
+    white-space: nowrap;
+    display: inline-block;
+}
+
+/* #language-select {
+    border-radius: 5px;
+    height: 30px;
+    margin-right: 10px;
+    width: 120px; */
+    /* 为下拉菜单设置固定宽度 */
+/* } */
+
+/* 当屏幕宽度小于等于768px时 */
+@media screen and (max-width: 768px) {
+    #travelinfo {
+        width: auto;
+        /* 将宽度设置为自适应 */
+        margin-right: 0;
+        /* 取消右边距 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #language-select {
+        width: auto;
+        /* 将宽度设置为自适应 */
+    }
+}
+@media screen and (min-width: 768px) {
+    .search-icon {
+        left: 20px; /* 或者根據需要設置其他適當的值 */
+    }
+}
+
+
+
+
+.bgi {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    /* z-index: -999; */
+}
+
+.bgi img {
+    min-height: 100%;
+    width: 100%;
+
+}
+
+img {
+    margin: 0;
+}
+
+.county {
+    fill: #ebf0e4;
+    stroke: blue;
+    stroke-width: 0.4px;
+}
+
+.county:hover {
+    fill: lightgray;
+}
+
+.pageHeader {
+    /* background: rgb(0, 167, 173); */
+    /* border: red 2px solid; */
+    height: 100px;
+}
+
+/* container */
+.weatherinfo{
+    position: absolute;
+    height: 600px;
+    float: right;
+    width: 800px;
+    border: 2px solid red;
+    z-index: 3;
+    top: 80px;
+    left: 600px;
+    color: aqua;
+    text-align: center;
+    display: none;
+    font-size: smaller;
+  
+}
+.weatherinfo{
+    clear: both;
+   
+}
+
+.infocontainer{
+    display: flex;
+    flex-wrap: wrap; /* 新增：允許元素換行 */
+    height: 600px;
+    width: 755px;
+    /* border: 2px solid red; */
+    z-index: 3;
+    top: 80px;
+    left: 70
+}
+/* ---------------API INFO---------------- */
+/* #icon img {
+    display: block; 
+    margin: 0 auto; 
+    margin-top: -5px;
+    border-radius: 10px;
+} */
+
+.icon-umbrella img{
+    width: 30px;
+    height: 30px;
+}
+.temp {
+    text-align: center; /* 将文字内容水平居中 */
+    /* font-size: smaller; */
+}
+
+/* 如果需要将垂直方向上的内容也居中，您可以使用以下样式 */
+.temp i, .temp sup {
+    vertical-align: middle; /* 将垂直方向上的内容居中 */
+    /* font-size: smaller; */
+
+}
+.Taiwans{
+    cursor: pointer;
+    
+}
+
+
+
+
+
+

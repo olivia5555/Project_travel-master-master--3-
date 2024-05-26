@@ -1,0 +1,127 @@
+#search{
+margin-top: 20px;
+/* width: 50px; */
+}
+
+.dropdown-item_1,.dropdown-item_2,.dropdown-item_3{
+text-decoration: none;
+color: #4e4e4e;
+
+}
+#tourist{
+background-image: linear-gradient(135deg,#3a333467,#e7cdee);
+padding-top: 50px;
+padding-bottom: 90px;
+padding-right: 50px;
+padding-left: 50px;
+
+position: relative;
+}
+
+#tourist>h2{
+ background-color: #cdcfee;
+ height: 45px;
+ padding: 10px;
+ /* margin: 0; */
+ margin-right: 20px;
+ border: 5px solid rgb(255, 255, 255);
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.card{
+width: 400px;
+}
+
+.card-img-top-wrapper {
+  height: 250px; /* 設置固定的高度 */
+  overflow: hidden; /* 隱藏超出部分 */
+  display: flex; /* 啟用 flexbox 佈局 */
+  align-items: center; /* 垂直居中對齊 */
+  justify-content: center; /* 水平居中對齊 */
+}
+
+.card-img-top {
+  max-width: 100%; /* 確保圖片不會超出父元素 */
+  max-height: 100%; /* 確保圖片不會超出父元素 */
+}
+#tourist_btn{
+background-image: linear-gradient(135deg,#3a333467,#e7cdee);
+padding-top: 220px;
+padding-bottom: 220px;
+padding-right: 100px;
+padding-left: 100px;
+}
+
+#show-tourist-info{
+font-size: 18px;
+border: none;
+background-color: rgba(0, 0, 0, 0.521);
+padding: 30px;
+width: 350px;
+}
+
+#show-tourist-info:hover{
+background-color: rgba(0, 0, 0, 0.205);
+font-size: 30px;
+transition:all .7s;
+}
+
+/* .row{
+  position: relative;
+  padding-bottom: 150px;
+} */
+
+
+.pagination-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heart-icon {
+  font-size: 40px;
+  color: #f3f3f3;
+  cursor: pointer;
+  margin: 10px;
+  display: inline-block;
+
+}
+
+.heart-icon.filled {
+  color: rgb(247, 108, 108);
+}
+
+.card-text>a{
+color: #747acc;
+text-decoration: none;
+}
+
+.card-text>a:hover{
+color: #4e4e4e;
+
+}
+
+
+
+.card-group {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.pagination-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-page {
+  display: none;
+}
+
+.card-page.active {
+  display: flex;
+}

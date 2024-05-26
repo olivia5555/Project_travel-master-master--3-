@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js">
+</head>
+<body>
+    <header>
+<div class="bread">
+<nav class="float">
+    <ul>
+        <li><img src="./image/logo.jpg" alt="" /></li>
+        <input type="text" value="搜尋想去的景點" >
+        <li><a href="">關於我們</a></li>
+        <li><a href="./dog.html">狗狗領養</a></li>
+        <li><a href="">照護方法</a></li>
+        <li><a href="">加入我們</a></li>
+      </ul>
+</nav>
+</div>
+</header>
+
+<script>
+const width = (this.$refs.map.offsetWidth).toFixed(),
+			height = (this.$refs.map.offsetHeight).toFixed();
+
+// 讓d3抓svg，並寫入寬高
+var svg = d3.select('#svg')
+            .attr('width', width)
+            .attr('height', height)
+            .attr('viewBox', `0 0 ${width} ${height}`);
+
+// 讓d3抓GeoJSON檔，並寫入path的路徑
+var url = 'dist/taiwan.geojson'; // GeoJSON的檔案路徑
+d3.json(url, (error, geometry) => {
+  if (error) throw error;
+
+  svg
+    .selectAll('path')
+    .data(geometry.features)
+    .enter().append('path')
+    .attr('d', path)
+    .attr({
+      // 設定id，為了click時加class用
+      id: (d) => 'city' + d.properties.COUNTYCODE
+    })
+    .on('click', d => {
+      this.h1 = d.properties.COUNTYNAME; // 換中文名
+      this.h2 = d.properties.COUNTYENG; // 換英文名
+      // 有 .active 存在，就移除 .active
+      if(document.querySelector('.active')) {
+        document.querySelector('.active').classList.remove('active');
+      }
+      // 被點擊的縣市加上 .active
+      document.getElementById('city' + d.properties.COUNTYCODE).classList.add('active');
+    });
+});
+
+</script>
+</body>
+</html>

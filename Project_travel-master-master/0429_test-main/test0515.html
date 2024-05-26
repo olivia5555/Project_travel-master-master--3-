@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="./jquery-3.7.1.js"></script>
+</head>
+<body>
+<button id="btnPostData">測試</button>
+    <div id ="divResult">
+    </div>
+
+    <script>
+btnPostData.onclick = function(x){
+$.ajax({url: "https://opendata.cwa.gov.tw/api/v1/rest/datastore/E-A0015-001?Authorization=rdec-key-123-45678-011121314",
+method: "GET"
+
+}).done(function(x){
+    // console.log(x);
+if (x.records && x.records.Earthquake) {
+console.log(x.records)
+            var pika = "";
+            $.each(x.records.Earthquake, function (index, item) {
+            console.log(item.ReportContent)
+              if (item.ReportContent) {
+                pika += `<p>${item.ReportContent}</p>`+`<p>${item.ReportColor}</p>`;
+
+              }
+            });
+            $("#divResult").html(pika);
+          } else {
+            console.log("Invalid data structure");
+          }
+})};
+  
+
+
+
+//     url: "https://opendata.cwa.gov.tw/api/v1/rest/datastore/E-A0015-001?Authorization=rdec-key-123-45678-011121314",
+//     method:"GET",success:function(x){
+// console.log(x.records.Earthquake)
+
+//     }
+// })
+
+
+
+
+
+
+// async function getdata(){
+//     let response = await fetch("https://opendata.cwa.gov.tw/api/v1/rest/datastore/E-A0015-001?Authorization=rdec-key-123-45678-011121314");
+//     let posts = await response.json();
+    
+//     console.log(posts.records.Earthquake[1]);
+
+//     let root = document.querySelector("#root");
+//     let ul = document.createElement("ul");
+
+//     posts.forEach(posts => {
+//         let li = document.createElement("li");
+//         let anchor = document.createElement("a");
+//         anchor.appendChild(document.createTextNode(posts.title));
+//         anchor.setAttribute("href",`https://opendata.cwa.gov.tw/api/v1/rest/datastore/E-A0015-001?Authorization=rdec-key-123-45678-011121314/posts/${records.Earthquake}`)
+   
+// li.appendChild(anchor);
+// ul.appendChild(li);
+//     });
+//     root.appendChild(ul);
+// }
+
+// getdata();
+
+    </script>
+</body>
+</html>

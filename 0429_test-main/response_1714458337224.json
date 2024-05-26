@@ -1,0 +1,5192 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "E-A0016-001",
+    "fields": [
+      {
+        "id": "ReportType",
+        "type": "String"
+      },
+      {
+        "id": "EarthquakeNo",
+        "type": "Integer"
+      },
+      {
+        "id": "ReportContent",
+        "type": "String"
+      },
+      {
+        "id": "ReportColor",
+        "type": "String"
+      },
+      {
+        "id": "Web",
+        "type": "String"
+      },
+      {
+        "id": "ReportImageURI",
+        "type": "String"
+      },
+      {
+        "id": "OriginTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "FocalDepth",
+        "type": "Float"
+      },
+      {
+        "id": "Location",
+        "type": "String"
+      },
+      {
+        "id": "EpicenterLatitude",
+        "type": "Float"
+      },
+      {
+        "id": "EpicenterLongitude",
+        "type": "Float"
+      },
+      {
+        "id": "AreaIntensity",
+        "type": "String"
+      },
+      {
+        "id": "IntScaleValue",
+        "type": "Float"
+      },
+      {
+        "id": "IntScaleValue",
+        "type": "Float"
+      },
+      {
+        "id": "IntScaleValue",
+        "type": "String"
+      },
+      {
+        "id": "IntScaleValue",
+        "type": "Float"
+      },
+      {
+        "id": "IntScaleValue",
+        "type": "Float"
+      },
+      {
+        "id": "unit",
+        "type": "String"
+      },
+      {
+        "id": "MagnitudeType",
+        "type": "String"
+      },
+      {
+        "id": "MagnitudeValue",
+        "type": "Float"
+      },
+      {
+        "id": "Source",
+        "type": "String"
+      },
+      {
+        "id": "AreaDesc",
+        "type": "String"
+      },
+      {
+        "id": "CountyName",
+        "type": "String"
+      },
+      {
+        "id": "InfoStatus",
+        "type": "String"
+      },
+      {
+        "id": "StationName",
+        "type": "String"
+      },
+      {
+        "id": "StationID",
+        "type": "String"
+      },
+      {
+        "id": "VComponent",
+        "type": "String"
+      },
+      {
+        "id": "NSComponent",
+        "type": "String"
+      },
+      {
+        "id": "EWComponent",
+        "type": "String"
+      },
+      {
+        "id": "IntScaleValue",
+        "type": "String"
+      },
+      {
+        "id": "ReportRemark",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "datasetDescription": "地震報告",
+    "Earthquake": [
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/30-12:07花蓮縣秀林鄉發生規模4.2有感地震，最大震度花蓮縣太魯閣、花蓮縣花蓮市、宜蘭縣南澳2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024043012074942_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024043012074942",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-30 12:07:49",
+          "Source": "中央氣象署",
+          "FocalDepth": 35.4,
+          "Epicenter": {
+            "Location": "花蓮縣政府北方  21.4  公里 (位於花蓮縣秀林鄉)",
+            "EpicenterLatitude": 24.18,
+            "EpicenterLongitude": 121.65
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 4.2
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "南投縣地區",
+              "CountyName": "南投縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.32,
+                    "NSComponent": 1.4,
+                    "VComponent": 0.7,
+                    "IntScaleValue": 2.09
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "合歡山",
+                  "StationID": "WHF",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 83.57,
+                  "EpicenterDistance": 38.74,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.143,
+                  "StationLongitude": 121.273
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "南投縣、臺中市、桃園市",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "花蓮縣、宜蘭縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "桃園市地區",
+              "CountyName": "桃園市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.63,
+                    "NSComponent": 0.75,
+                    "VComponent": 0.54,
+                    "IntScaleValue": 0.94
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "三光",
+                  "StationID": "NSK",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 152.09,
+                  "EpicenterDistance": 61.68,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.674,
+                  "StationLongitude": 121.367
+                }
+              ]
+            },
+            {
+              "AreaDesc": "臺中市地區",
+              "CountyName": "臺中市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.86,
+                    "NSComponent": 1.28,
+                    "VComponent": 0.49,
+                    "IntScaleValue": 1.37
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "梨山",
+                  "StationID": "FUSS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 99.88,
+                  "EpicenterDistance": 42.03,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.248,
+                  "StationLongitude": 121.244
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.65,
+                    "NSComponent": 1.17,
+                    "VComponent": 0.39,
+                    "IntScaleValue": 1.12
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "德基",
+                  "StationID": "TWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 98.5,
+                  "EpicenterDistance": 50.28,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.25,
+                  "StationLongitude": 121.162
+                }
+              ]
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 7.71,
+                    "NSComponent": 10.95,
+                    "VComponent": 2.53,
+                    "IntScaleValue": 5.17
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.07,
+                    "NSComponent": 0.14,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.14
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 47.57,
+                  "EpicenterDistance": 3.91,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.38,
+                    "NSComponent": 2.96,
+                    "VComponent": 1.18,
+                    "IntScaleValue": 3.02
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.1,
+                    "NSComponent": 0.1,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.12
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 9.42,
+                  "EpicenterDistance": 23.33,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.4,
+                    "NSComponent": 4.22,
+                    "VComponent": 2.21,
+                    "IntScaleValue": 2.63
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.08,
+                    "NSComponent": 0.07,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.08
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 33.85,
+                  "EpicenterDistance": 28.94,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.2,
+                    "NSComponent": 3.46,
+                    "VComponent": 2.39,
+                    "IntScaleValue": 3.25
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.1,
+                    "NSComponent": 0.11,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.11
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 215.35,
+                  "EpicenterDistance": 17.21,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.79,
+                    "NSComponent": 4.15,
+                    "VComponent": 1.61,
+                    "IntScaleValue": 4.41
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.14,
+                    "NSComponent": 0.12,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.18
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 9.26,
+                  "EpicenterDistance": 31.37,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 98.9,
+                  "EpicenterDistance": 17.43,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.43,
+                    "NSComponent": 1.33,
+                    "VComponent": 1.69,
+                    "IntScaleValue": 1.27
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "秀林",
+                  "StationID": "TWD",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 22.95,
+                  "EpicenterDistance": 12.21,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.081,
+                  "StationLongitude": 121.605
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.38,
+                    "NSComponent": 2.25,
+                    "VComponent": 0.91,
+                    "IntScaleValue": 1.03
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "西林",
+                  "StationID": "ESL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 27.43,
+                  "EpicenterDistance": 46.32,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.812,
+                  "StationLongitude": 121.442
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.13,
+                    "NSComponent": 1.66,
+                    "VComponent": 0.16,
+                    "IntScaleValue": 1.37
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "磯崎",
+                  "StationID": "EGC",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 11.34,
+                  "EpicenterDistance": 53.72,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.708,
+                  "StationLongitude": 121.548
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.34,
+                    "NSComponent": 1.22,
+                    "VComponent": 0.91,
+                    "IntScaleValue": 1.04
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "光復",
+                  "StationID": "EGFH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 21.79,
+                  "EpicenterDistance": 61.37,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.669,
+                  "StationLongitude": 121.428
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 5.24,
+                    "NSComponent": 6.51,
+                    "VComponent": 2.52,
+                    "IntScaleValue": 3.13
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.09,
+                    "NSComponent": 0.11,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.12
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 200.16,
+                  "EpicenterDistance": 28.77,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.26,
+                    "NSComponent": 3.82,
+                    "VComponent": 3.82,
+                    "IntScaleValue": 3.53
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.12,
+                    "NSComponent": 0.13,
+                    "VComponent": 0.08,
+                    "IntScaleValue": 0.13
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 203.86,
+                  "EpicenterDistance": 31.85,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.25,
+                    "NSComponent": 2.62,
+                    "VComponent": 1.9,
+                    "IntScaleValue": 2.4
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.09,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.1
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 208.74,
+                  "EpicenterDistance": 18.58,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.77,
+                    "NSComponent": 1.96,
+                    "VComponent": 0.46,
+                    "IntScaleValue": 2.41
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.09,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.1
+                  },
+                  "StationName": "南山",
+                  "StationID": "NNS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 135.9,
+                  "EpicenterDistance": 39.38,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.437,
+                  "StationLongitude": 121.381
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.4,
+                    "NSComponent": 1.84,
+                    "VComponent": 0.59,
+                    "IntScaleValue": 1.32
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "牛鬥",
+                  "StationID": "ENT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 171.14,
+                  "EpicenterDistance": 51.13,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.638,
+                  "StationLongitude": 121.574
+                },
+                {
+                  "StationName": "蘇澳",
+                  "StationID": "TWC",
+                  "BackAzimuth": 204.13,
+                  "EpicenterDistance": 51.76,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.608,
+                  "StationLongitude": 121.86
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/30-04:15花蓮縣壽豐鄉發生規模3.4有感地震，最大震度花蓮縣鹽寮4級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024043004154734_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024043004154734",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-30 04:15:47",
+          "Source": "中央氣象署",
+          "FocalDepth": 3.4,
+          "Epicenter": {
+            "Location": "花蓮縣政府南南西方  8.2  公里 (位於花蓮縣壽豐鄉)",
+            "EpicenterLatitude": 23.92,
+            "EpicenterLongitude": 121.6
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.4
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "南投縣地區",
+              "CountyName": "南投縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "StationName": "奧萬大",
+                  "StationID": "OWD",
+                  "BackAzimuth": 95.08,
+                  "EpicenterDistance": 43.03,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.955,
+                  "StationLongitude": 121.176
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "南投縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "4級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 52.76,
+                    "NSComponent": 36.09,
+                    "VComponent": 26.8,
+                    "IntScaleValue": 57.59
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 1.25,
+                    "NSComponent": 0.97,
+                    "VComponent": 0.4,
+                    "IntScaleValue": 1.57
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 345.49,
+                  "EpicenterDistance": 1.91,
+                  "SeismicIntensity": "4級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 9.27,
+                    "NSComponent": 10.28,
+                    "VComponent": 3.97,
+                    "IntScaleValue": 9.82
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.27,
+                    "NSComponent": 0.22,
+                    "VComponent": 0.09,
+                    "IntScaleValue": 0.31
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 195.67,
+                  "EpicenterDistance": 6.33,
+                  "SeismicIntensity": "3級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 37.72,
+                    "NSComponent": 20.47,
+                    "VComponent": 13.06,
+                    "IntScaleValue": 11.1
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.46,
+                    "NSComponent": 0.3,
+                    "VComponent": 0.13,
+                    "IntScaleValue": 0.46
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 115.57,
+                  "EpicenterDistance": 11.76,
+                  "SeismicIntensity": "3級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 13.33,
+                    "NSComponent": 7.72,
+                    "VComponent": 1.53,
+                    "IntScaleValue": 3.78
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.13,
+                    "NSComponent": 0.1,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.15
+                  },
+                  "StationName": "西林",
+                  "StationID": "ESL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 52.83,
+                  "EpicenterDistance": 19.86,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.812,
+                  "StationLongitude": 121.442
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 5.84,
+                    "NSComponent": 4.59,
+                    "VComponent": 1.01,
+                    "IntScaleValue": 2.7
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.08,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.08
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 185.68,
+                  "EpicenterDistance": 26.6,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.33,
+                    "NSComponent": 1.03,
+                    "VComponent": 0.14,
+                    "IntScaleValue": 0.99
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.07,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "磯崎",
+                  "StationID": "EGC",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 12.06,
+                  "EpicenterDistance": 24.09,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.708,
+                  "StationLongitude": 121.548
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 159.78,
+                  "EpicenterDistance": 33.89,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度4級地區",
+              "CountyName": "花蓮縣",
+              "AreaIntensity": "4級",
+              "EqStation": []
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/30-01:13臺灣東部海域發生規模4.0有感地震，最大震度花蓮縣花蓮市、宜蘭縣南澳1級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024043001132440_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024043001132440",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-30 01:13:24",
+          "Source": "中央氣象署",
+          "FocalDepth": 50.4,
+          "Epicenter": {
+            "Location": "花蓮縣政府東南方  11.4  公里 (位於臺灣東部海域)",
+            "EpicenterLatitude": 23.93,
+            "EpicenterLongitude": 121.71
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 4
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "花蓮縣、宜蘭縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.28,
+                    "NSComponent": 0.99,
+                    "VComponent": 0.48,
+                    "IntScaleValue": 1.01
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 118.85,
+                  "EpicenterDistance": 10.98,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.47,
+                    "NSComponent": 1.27,
+                    "VComponent": 0.67,
+                    "IntScaleValue": 1.26
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 76.31,
+                  "EpicenterDistance": 11.17,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.66,
+                    "NSComponent": 2.34,
+                    "VComponent": 1.86,
+                    "IntScaleValue": 0.86
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 101.04,
+                  "EpicenterDistance": 22.35,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.34,
+                    "NSComponent": 3.96,
+                    "VComponent": 0.96,
+                    "IntScaleValue": 1.85
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 161.3,
+                  "EpicenterDistance": 27.1,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.16,
+                    "NSComponent": 0.84,
+                    "VComponent": 0.85,
+                    "IntScaleValue": 1.02
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 185.63,
+                  "EpicenterDistance": 42.55,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 143.39,
+                  "EpicenterDistance": 38.63,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.2,
+                    "NSComponent": 1.69,
+                    "VComponent": 1.02,
+                    "IntScaleValue": 1.3
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 184.27,
+                  "EpicenterDistance": 55.47,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.91,
+                    "NSComponent": 1.06,
+                    "VComponent": 1.11,
+                    "IntScaleValue": 1.01
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 187.05,
+                  "EpicenterDistance": 57.88,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/30-00:57花蓮縣秀林鄉發生規模3.7有感地震，最大震度花蓮縣和平、宜蘭縣澳花3級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024043000572437_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024043000572437",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-30 00:57:24",
+          "Source": "中央氣象署",
+          "FocalDepth": 10.8,
+          "Epicenter": {
+            "Location": "花蓮縣政府北北東方  27.1  公里 (位於花蓮縣秀林鄉)",
+            "EpicenterLatitude": 24.23,
+            "EpicenterLongitude": 121.69
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.7
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "南投縣地區",
+              "CountyName": "南投縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.82,
+                    "NSComponent": 0.79,
+                    "VComponent": 0.28,
+                    "IntScaleValue": 0.86
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "合歡山",
+                  "StationID": "WHF",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 77.93,
+                  "EpicenterDistance": 43.84,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.143,
+                  "StationLongitude": 121.273
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "南投縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "3級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 20.42,
+                    "NSComponent": 18.92,
+                    "VComponent": 11.48,
+                    "IntScaleValue": 17.4
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.45,
+                    "NSComponent": 0.3,
+                    "VComponent": 0.19,
+                    "IntScaleValue": 0.54
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 211.18,
+                  "EpicenterDistance": 10.76,
+                  "SeismicIntensity": "3級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 14.96,
+                    "NSComponent": 23.88,
+                    "VComponent": 9.48,
+                    "IntScaleValue": 7.56
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.16,
+                    "NSComponent": 0.31,
+                    "VComponent": 0.09,
+                    "IntScaleValue": 0.31
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 44.25,
+                  "EpicenterDistance": 10.42,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 84.37,
+                  "EpicenterDistance": 21.71,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度3級地區",
+              "CountyName": "花蓮縣、宜蘭縣",
+              "AreaIntensity": "3級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "3級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 13.57,
+                    "NSComponent": 21.7,
+                    "VComponent": 10.88,
+                    "IntScaleValue": 17.12
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.22,
+                    "NSComponent": 0.38,
+                    "VComponent": 0.18,
+                    "IntScaleValue": 0.41
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 201.64,
+                  "EpicenterDistance": 12.33,
+                  "SeismicIntensity": "3級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 10.1,
+                    "NSComponent": 9.78,
+                    "VComponent": 4.17,
+                    "IntScaleValue": 4.66
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.12,
+                    "NSComponent": 0.12,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.14
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 194,
+                  "EpicenterDistance": 22.86,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 4.35,
+                    "NSComponent": 6.91,
+                    "VComponent": 3.52,
+                    "IntScaleValue": 4.79
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.1,
+                    "NSComponent": 0.14,
+                    "VComponent": 0.06,
+                    "IntScaleValue": 0.14
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 199.29,
+                  "EpicenterDistance": 25.75,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.75,
+                    "NSComponent": 6.82,
+                    "VComponent": 1.48,
+                    "IntScaleValue": 6.47
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.08,
+                    "NSComponent": 0.15,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.15
+                  },
+                  "StationName": "牛鬥",
+                  "StationID": "ENT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 164.99,
+                  "EpicenterDistance": 47.31,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.638,
+                  "StationLongitude": 121.574
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.79,
+                    "NSComponent": 1.25,
+                    "VComponent": 0.38,
+                    "IntScaleValue": 1.09
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "南山",
+                  "StationID": "NNS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 126.43,
+                  "EpicenterDistance": 39.5,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.437,
+                  "StationLongitude": 121.381
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/29-23:21花蓮縣秀林鄉發生規模3.7有感地震，最大震度宜蘭縣南澳2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042923215637_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042923215637",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-29 23:21:56",
+          "Source": "中央氣象署",
+          "FocalDepth": 33.9,
+          "Epicenter": {
+            "Location": "花蓮縣政府北北東方  30.8  公里 (位於花蓮縣秀林鄉)",
+            "EpicenterLatitude": 24.25,
+            "EpicenterLongitude": 121.72
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.7
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "花蓮縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "宜蘭縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.49,
+                    "NSComponent": 1.31,
+                    "VComponent": 1.38,
+                    "IntScaleValue": 0.86
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 206.17,
+                  "EpicenterDistance": 6.88,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.63,
+                    "NSComponent": 1.97,
+                    "VComponent": 0.57,
+                    "IntScaleValue": 1.32
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 43.06,
+                  "EpicenterDistance": 14.37,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 77.93,
+                  "EpicenterDistance": 24.69,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 7.37,
+                    "NSComponent": 5.85,
+                    "VComponent": 1.89,
+                    "IntScaleValue": 2.7
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.08,
+                    "NSComponent": 0.07,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.09
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 188.89,
+                  "EpicenterDistance": 19.38,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.06,
+                    "NSComponent": 0.98,
+                    "VComponent": 0.87,
+                    "IntScaleValue": 0.96
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 193.42,
+                  "EpicenterDistance": 8.67,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.7,
+                    "NSComponent": 1.61,
+                    "VComponent": 1.81,
+                    "IntScaleValue": 0.98
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 195.67,
+                  "EpicenterDistance": 22.09,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/29-23:21花蓮縣秀林鄉發生規模4.4有感地震，最大震度花蓮縣太魯閣3級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042923211344_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042923211344",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-29 23:21:13",
+          "Source": "中央氣象署",
+          "FocalDepth": 27.6,
+          "Epicenter": {
+            "Location": "花蓮縣政府北北東方  32.8  公里 (位於花蓮縣秀林鄉)",
+            "EpicenterLatitude": 24.28,
+            "EpicenterLongitude": 121.69
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 4.4
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "南投縣地區",
+              "CountyName": "南投縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.37,
+                    "NSComponent": 2.26,
+                    "VComponent": 1.7,
+                    "IntScaleValue": 3.49
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.13,
+                    "NSComponent": 0.09,
+                    "VComponent": 0.06,
+                    "IntScaleValue": 0.16
+                  },
+                  "StationName": "合歡山",
+                  "StationID": "WHF",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 70.27,
+                  "EpicenterDistance": 45.05,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.143,
+                  "StationLongitude": 121.273
+                }
+              ]
+            },
+            {
+              "AreaDesc": "臺北市地區",
+              "CountyName": "臺北市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "StationName": "木柵",
+                  "StationID": "TWA",
+                  "BackAzimuth": 172.71,
+                  "EpicenterDistance": 78.02,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.978,
+                  "StationLongitude": 121.592
+                }
+              ]
+            },
+            {
+              "AreaDesc": "雲林縣地區",
+              "CountyName": "雲林縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.77,
+                    "NSComponent": 0.77,
+                    "VComponent": 0.61,
+                    "IntScaleValue": 0.89
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "斗六市",
+                  "StationID": "WDL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 61.82,
+                  "EpicenterDistance": 132.91,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.715,
+                  "StationLongitude": 120.539
+                }
+              ]
+            },
+            {
+              "AreaDesc": "新北市地區",
+              "CountyName": "新北市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.79,
+                    "NSComponent": 0.98,
+                    "VComponent": 0.45,
+                    "IntScaleValue": 0.85
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "汐止",
+                  "StationID": "NXZ",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 176.74,
+                  "EpicenterDistance": 88.48,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 25.077,
+                  "StationLongitude": 121.64
+                },
+                {
+                  "StationName": "烏來",
+                  "StationID": "A124",
+                  "BackAzimuth": 167.93,
+                  "EpicenterDistance": 66.18,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.864,
+                  "StationLongitude": 121.553
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "臺中市、新竹縣、新北市、桃園市、苗栗縣、彰化縣、臺北市、嘉義市、雲林縣、嘉義縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "3級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 8.87,
+                    "NSComponent": 15.36,
+                    "VComponent": 5.01,
+                    "IntScaleValue": 10.61
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.11,
+                    "NSComponent": 0.31,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.32
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 26.76,
+                  "EpicenterDistance": 15.14,
+                  "SeismicIntensity": "3級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 5.11,
+                    "NSComponent": 4.41,
+                    "VComponent": 4.82,
+                    "IntScaleValue": 4.45
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.12,
+                    "NSComponent": 0.14,
+                    "VComponent": 0.1,
+                    "IntScaleValue": 0.15
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 242.32,
+                  "EpicenterDistance": 6.81,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.26,
+                    "NSComponent": 2.87,
+                    "VComponent": 0.94,
+                    "IntScaleValue": 2.75
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.08,
+                    "NSComponent": 0.08,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.1
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 12.11,
+                  "EpicenterDistance": 42.78,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 68.85,
+                  "EpicenterDistance": 22.67,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1,
+                    "NSComponent": 1.5,
+                    "VComponent": 1.17,
+                    "IntScaleValue": 1.21
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "秀林",
+                  "StationID": "TWD",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 21.45,
+                  "EpicenterDistance": 23.76,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.081,
+                  "StationLongitude": 121.605
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.81,
+                    "NSComponent": 1.72,
+                    "VComponent": 0.75,
+                    "IntScaleValue": 1.87
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 12.87,
+                  "EpicenterDistance": 34.76,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.65,
+                    "NSComponent": 2.57,
+                    "VComponent": 1.92,
+                    "IntScaleValue": 1.66
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 29.87,
+                  "EpicenterDistance": 40.25,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.82,
+                    "NSComponent": 1.8,
+                    "VComponent": 0.82,
+                    "IntScaleValue": 0.91
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "西林",
+                  "StationID": "ESL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 25.92,
+                  "EpicenterDistance": 57.8,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.812,
+                  "StationLongitude": 121.442
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.32,
+                    "NSComponent": 0.94,
+                    "VComponent": 0.86,
+                    "IntScaleValue": 0.88
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "光復",
+                  "StationID": "EGFH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 21.49,
+                  "EpicenterDistance": 72.93,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.669,
+                  "StationLongitude": 121.428
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.37,
+                    "NSComponent": 1.72,
+                    "VComponent": 0.11,
+                    "IntScaleValue": 1.74
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.09,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.09
+                  },
+                  "StationName": "磯崎",
+                  "StationID": "EGC",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 12.84,
+                  "EpicenterDistance": 65.17,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.708,
+                  "StationLongitude": 121.548
+                }
+              ]
+            },
+            {
+              "AreaDesc": "苗栗縣地區",
+              "CountyName": "苗栗縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.01,
+                    "NSComponent": 0.66,
+                    "VComponent": 0.33,
+                    "IntScaleValue": 1
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "竹南",
+                  "StationID": "NJN",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 118.3,
+                  "EpicenterDistance": 94.36,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.684,
+                  "StationLongitude": 120.87
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度3級地區",
+              "CountyName": "花蓮縣",
+              "AreaIntensity": "3級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "彰化縣地區",
+              "CountyName": "彰化縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.13,
+                    "NSComponent": 0.95,
+                    "VComponent": 0.45,
+                    "IntScaleValue": 1.08
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "彰化市",
+                  "StationID": "WCHH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 79.02,
+                  "EpicenterDistance": 117.12,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.079,
+                  "StationLongitude": 120.558
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.76,
+                    "NSComponent": 0.75,
+                    "VComponent": 0.54,
+                    "IntScaleValue": 0.81
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "二林",
+                  "StationID": "WRL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 72.55,
+                  "EpicenterDistance": 139.81,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.903,
+                  "StationLongitude": 120.378
+                }
+              ]
+            },
+            {
+              "AreaDesc": "桃園市地區",
+              "CountyName": "桃園市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.91,
+                    "NSComponent": 1.1,
+                    "VComponent": 0.49,
+                    "IntScaleValue": 1.06
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "桃園市",
+                  "StationID": "NTY",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 153.54,
+                  "EpicenterDistance": 89.15,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 25,
+                  "StationLongitude": 121.298
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.6,
+                    "NSComponent": 0.93,
+                    "VComponent": 0.15,
+                    "IntScaleValue": 0.85
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "新屋",
+                  "StationID": "NHW",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 141.1,
+                  "EpicenterDistance": 103.55,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 25.007,
+                  "StationLongitude": 121.048
+                }
+              ]
+            },
+            {
+              "AreaDesc": "新竹縣地區",
+              "CountyName": "新竹縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.75,
+                    "NSComponent": 0.66,
+                    "VComponent": 0.44,
+                    "IntScaleValue": 0.88
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "關西",
+                  "StationID": "KSHI",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 136.58,
+                  "EpicenterDistance": 75.87,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.777,
+                  "StationLongitude": 121.175
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.98,
+                    "NSComponent": 1.41,
+                    "VComponent": 0.51,
+                    "IntScaleValue": 1.48
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "竹東",
+                  "StationID": "NJD",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 129.63,
+                  "EpicenterDistance": 79.2,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.736,
+                  "StationLongitude": 121.088
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.55,
+                    "NSComponent": 1.02,
+                    "VComponent": 0.36,
+                    "IntScaleValue": 1.03
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "竹北市",
+                  "StationID": "HSN",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 131.6,
+                  "EpicenterDistance": 91.53,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.828,
+                  "StationLongitude": 121.014
+                }
+              ]
+            },
+            {
+              "AreaDesc": "臺中市地區",
+              "CountyName": "臺中市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.8,
+                    "NSComponent": 0.92,
+                    "VComponent": 0.48,
+                    "IntScaleValue": 0.88
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "梨山",
+                  "StationID": "FUSS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 85.38,
+                  "EpicenterDistance": 45.46,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.248,
+                  "StationLongitude": 121.244
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.4,
+                    "NSComponent": 2.14,
+                    "VComponent": 1.08,
+                    "IntScaleValue": 2.12
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.11,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.11
+                  },
+                  "StationName": "德基",
+                  "StationID": "TWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 86.33,
+                  "EpicenterDistance": 53.74,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.25,
+                  "StationLongitude": 121.162
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.6,
+                    "NSComponent": 0.89,
+                    "VComponent": 0.37,
+                    "IntScaleValue": 0.85
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "霧峰",
+                  "StationID": "B219",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 75.27,
+                  "EpicenterDistance": 104.07,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.042,
+                  "StationLongitude": 120.7
+                }
+              ]
+            },
+            {
+              "AreaDesc": "嘉義縣地區",
+              "CountyName": "嘉義縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.54,
+                    "NSComponent": 0.72,
+                    "VComponent": 0.3,
+                    "IntScaleValue": 0.82
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "太保市",
+                  "StationID": "CHY1",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 57.27,
+                  "EpicenterDistance": 169.01,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.457,
+                  "StationLongitude": 120.294
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 4.85,
+                    "NSComponent": 5.29,
+                    "VComponent": 2.63,
+                    "IntScaleValue": 4.78
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.2,
+                    "NSComponent": 0.14,
+                    "VComponent": 0.08,
+                    "IntScaleValue": 0.24
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 222.74,
+                  "EpicenterDistance": 7.37,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 16.69,
+                    "NSComponent": 18.7,
+                    "VComponent": 6.2,
+                    "IntScaleValue": 6.17
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.22,
+                    "NSComponent": 0.19,
+                    "VComponent": 0.13,
+                    "IntScaleValue": 0.27
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 200.36,
+                  "EpicenterDistance": 17.21,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 6.05,
+                    "NSComponent": 6.21,
+                    "VComponent": 5.05,
+                    "IntScaleValue": 4.83
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.18,
+                    "NSComponent": 0.18,
+                    "VComponent": 0.1,
+                    "IntScaleValue": 0.2
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 206.14,
+                  "EpicenterDistance": 20.33,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.67,
+                    "NSComponent": 2.06,
+                    "VComponent": 0.79,
+                    "IntScaleValue": 1.63
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "南山",
+                  "StationID": "NNS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 119.07,
+                  "EpicenterDistance": 35.83,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.437,
+                  "StationLongitude": 121.381
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.04,
+                    "NSComponent": 1.03,
+                    "VComponent": 1.11,
+                    "IntScaleValue": 2.06
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.1,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.11
+                  },
+                  "StationName": "冬山",
+                  "StationID": "NDS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 183.96,
+                  "EpicenterDistance": 39.32,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.634,
+                  "StationLongitude": 121.717
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.55,
+                    "NSComponent": 2.24,
+                    "VComponent": 0.89,
+                    "IntScaleValue": 2.22
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "牛鬥",
+                  "StationID": "ENT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 163.44,
+                  "EpicenterDistance": 41.36,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.638,
+                  "StationLongitude": 121.574
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.1,
+                    "NSComponent": 0.87,
+                    "VComponent": 0.66,
+                    "IntScaleValue": 1.1
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "內城",
+                  "StationID": "TWE",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 179.15,
+                  "EpicenterDistance": 48.56,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.718,
+                  "StationLongitude": 121.683
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.92,
+                    "NSComponent": 1.01,
+                    "VComponent": 0.48,
+                    "IntScaleValue": 1.39
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "宜蘭市",
+                  "StationID": "ILA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 187.23,
+                  "EpicenterDistance": 54.08,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.764,
+                  "StationLongitude": 121.757
+                },
+                {
+                  "StationName": "蘇澳",
+                  "StationID": "TWC",
+                  "BackAzimuth": 205.36,
+                  "EpicenterDistance": 40.24,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.608,
+                  "StationLongitude": 121.86
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "宜蘭縣、南投縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "嘉義市地區",
+              "CountyName": "嘉義市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.8,
+                    "NSComponent": 0.54,
+                    "VComponent": 0.18,
+                    "IntScaleValue": 0.85
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "嘉義市",
+                  "StationID": "CHY",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 55.8,
+                  "EpicenterDistance": 154.79,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.496,
+                  "StationLongitude": 120.433
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/29-19:43臺中市和平區發生規模3.8有感地震，最大震度臺中市烏石坑、苗栗縣鯉魚潭、彰化縣彰化市2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042919433138_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042919433138",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-29 19:43:31",
+          "Source": "中央氣象署",
+          "FocalDepth": 27.7,
+          "Epicenter": {
+            "Location": "臺中市政府東北東方  25.5  公里 (位於臺中市和平區)",
+            "EpicenterLatitude": 24.27,
+            "EpicenterLongitude": 120.88
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.8
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "南投縣地區",
+              "CountyName": "南投縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.97,
+                    "NSComponent": 1.97,
+                    "VComponent": 0.65,
+                    "IntScaleValue": 1.73
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "國姓",
+                  "StationID": "WCS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 353.05,
+                  "EpicenterDistance": 24.23,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.057,
+                  "StationLongitude": 120.912
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.93,
+                    "NSComponent": 0.43,
+                    "VComponent": 0.6,
+                    "IntScaleValue": 0.93
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.01,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "埔里",
+                  "StationID": "WPL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 345.35,
+                  "EpicenterDistance": 29.93,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.012,
+                  "StationLongitude": 120.957
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "南投縣、雲林縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "彰化縣地區",
+              "CountyName": "彰化縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 4.99,
+                    "NSComponent": 3.23,
+                    "VComponent": 1.21,
+                    "IntScaleValue": 2.52
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.07,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.08
+                  },
+                  "StationName": "彰化市",
+                  "StationID": "WCHH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 56.87,
+                  "EpicenterDistance": 39.37,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.079,
+                  "StationLongitude": 120.558
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.52,
+                    "NSComponent": 1.5,
+                    "VComponent": 1.13,
+                    "IntScaleValue": 1.04
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "員林",
+                  "StationID": "WYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 41.58,
+                  "EpicenterDistance": 46.4,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.961,
+                  "StationLongitude": 120.58
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.24,
+                    "NSComponent": 1.68,
+                    "VComponent": 1.52,
+                    "IntScaleValue": 1.4
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "鹿港",
+                  "StationID": "B112",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 62.24,
+                  "EpicenterDistance": 51.96,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.055,
+                  "StationLongitude": 120.43
+                },
+                {
+                  "StationName": "二林",
+                  "StationID": "WRL",
+                  "BackAzimuth": 51.28,
+                  "EpicenterDistance": 65.77,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.903,
+                  "StationLongitude": 120.378
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.3,
+                    "NSComponent": 1.97,
+                    "VComponent": 0.56,
+                    "IntScaleValue": 0.83
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "大城",
+                  "StationID": "WTC",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 52.89,
+                  "EpicenterDistance": 75.7,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.862,
+                  "StationLongitude": 120.289
+                }
+              ]
+            },
+            {
+              "AreaDesc": "雲林縣地區",
+              "CountyName": "雲林縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.36,
+                    "NSComponent": 1.14,
+                    "VComponent": 0.71,
+                    "IntScaleValue": 1.26
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "西螺",
+                  "StationID": "C092",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 36.89,
+                  "EpicenterDistance": 67.21,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.789,
+                  "StationLongitude": 120.486
+                }
+              ]
+            },
+            {
+              "AreaDesc": "臺中市地區",
+              "CountyName": "臺中市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 6.89,
+                    "NSComponent": 6.12,
+                    "VComponent": 2.28,
+                    "IntScaleValue": 5.55
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.13,
+                    "NSComponent": 0.1,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.15
+                  },
+                  "StationName": "烏石坑",
+                  "StationID": "WHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 265.66,
+                  "EpicenterDistance": 6.41,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.278,
+                  "StationLongitude": 120.946
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.35,
+                    "NSComponent": 3.61,
+                    "VComponent": 1.7,
+                    "IntScaleValue": 4.16
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.1,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.11
+                  },
+                  "StationName": "德基",
+                  "StationID": "TWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 275.33,
+                  "EpicenterDistance": 28.45,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.25,
+                  "StationLongitude": 121.162
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 4.02,
+                    "NSComponent": 3.27,
+                    "VComponent": 2.26,
+                    "IntScaleValue": 1.61
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "霧峰",
+                  "StationID": "B219",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 35.97,
+                  "EpicenterDistance": 31.72,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.042,
+                  "StationLongitude": 120.7
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.4,
+                    "NSComponent": 1.46,
+                    "VComponent": 3.6,
+                    "IntScaleValue": 1.67
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "梧棲",
+                  "StationID": "WWC",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 87.09,
+                  "EpicenterDistance": 36.54,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.257,
+                  "StationLongitude": 120.523
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "臺中市、苗栗縣、彰化縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "苗栗縣地區",
+              "CountyName": "苗栗縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 5.93,
+                    "NSComponent": 4.32,
+                    "VComponent": 2.62,
+                    "IntScaleValue": 6.72
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.14,
+                    "NSComponent": 0.11,
+                    "VComponent": 0.07,
+                    "IntScaleValue": 0.16
+                  },
+                  "StationName": "鯉魚潭",
+                  "StationID": "TWQ1",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 128.12,
+                  "EpicenterDistance": 13.15,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.347,
+                  "StationLongitude": 120.781
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.53,
+                    "NSComponent": 1.36,
+                    "VComponent": 1.53,
+                    "IntScaleValue": 1.18
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "三義",
+                  "StationID": "NSY",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 143.74,
+                  "EpicenterDistance": 19.41,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.414,
+                  "StationLongitude": 120.77
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.98,
+                    "NSComponent": 1,
+                    "VComponent": 0.82,
+                    "IntScaleValue": 0.92
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.02
+                  },
+                  "StationName": "泰安",
+                  "StationID": "H176",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 195.38,
+                  "EpicenterDistance": 22.09,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.465,
+                  "StationLongitude": 120.941
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.03,
+                    "NSComponent": 1.67,
+                    "VComponent": 0.55,
+                    "IntScaleValue": 1.58
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "苗栗市",
+                  "StationID": "NML",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 169.86,
+                  "EpicenterDistance": 32.87,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.565,
+                  "StationLongitude": 120.826
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.99,
+                    "NSComponent": 1.14,
+                    "VComponent": 0.7,
+                    "IntScaleValue": 2.07
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "竹南",
+                  "StationID": "NJN",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 178.4,
+                  "EpicenterDistance": 45.54,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.684,
+                  "StationLongitude": 120.87
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/29-09:01花蓮縣近海發生規模3.4有感地震，最大震度花蓮縣太魯閣2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042909012234_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042909012234",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-29 09:01:22",
+          "Source": "中央氣象署",
+          "FocalDepth": 19.7,
+          "Epicenter": {
+            "Location": "花蓮縣政府北北東方  24.7  公里 (位於花蓮縣近海)",
+            "EpicenterLatitude": 24.19,
+            "EpicenterLongitude": 121.73
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.4
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "花蓮縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "宜蘭縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 4.66,
+                    "NSComponent": 6.21,
+                    "VComponent": 1.85,
+                    "IntScaleValue": 2.54
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.07,
+                    "NSComponent": 0.07,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.09
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 74.24,
+                  "EpicenterDistance": 11.76,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.97,
+                    "NSComponent": 3.51,
+                    "VComponent": 2.12,
+                    "IntScaleValue": 3.03
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 186.47,
+                  "EpicenterDistance": 13.57,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.21,
+                    "NSComponent": 1.07,
+                    "VComponent": 0.4,
+                    "IntScaleValue": 0.98
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 27.48,
+                  "EpicenterDistance": 26.56,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 94.77,
+                  "EpicenterDistance": 25.74,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                },
+                {
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "BackAzimuth": 23.18,
+                  "EpicenterDistance": 34.28,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.56,
+                    "NSComponent": 2.41,
+                    "VComponent": 1.68,
+                    "IntScaleValue": 2.31
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 181.84,
+                  "EpicenterDistance": 15.74,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.6,
+                    "NSComponent": 4.88,
+                    "VComponent": 1.04,
+                    "IntScaleValue": 2.33
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.07,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 183.22,
+                  "EpicenterDistance": 26.5,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2,
+                    "NSComponent": 1.78,
+                    "VComponent": 1.11,
+                    "IntScaleValue": 1.51
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 188.88,
+                  "EpicenterDistance": 28.92,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                },
+                {
+                  "StationName": "蘇澳",
+                  "StationID": "TWC",
+                  "BackAzimuth": 195.27,
+                  "EpicenterDistance": 48.39,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.608,
+                  "StationLongitude": 121.86
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.75,
+                    "NSComponent": 1.07,
+                    "VComponent": 0.2,
+                    "IntScaleValue": 0.83
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.01,
+                    "NSComponent": 0.02,
+                    "VComponent": 0,
+                    "IntScaleValue": 0.02
+                  },
+                  "StationName": "牛鬥",
+                  "StationID": "ENT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 161.94,
+                  "EpicenterDistance": 52.56,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.638,
+                  "StationLongitude": 121.574
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/29-07:44花蓮縣壽豐鄉發生規模3.3有感地震，最大震度花蓮縣西林2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042907441133_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042907441133",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-29 07:44:11",
+          "Source": "中央氣象署",
+          "FocalDepth": 5,
+          "Epicenter": {
+            "Location": "花蓮縣政府南南西方  28.2  公里 (位於花蓮縣壽豐鄉)",
+            "EpicenterLatitude": 23.76,
+            "EpicenterLongitude": 121.51
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.3
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "花蓮縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 20.7,
+                    "NSComponent": 15.46,
+                    "VComponent": 4.31,
+                    "IntScaleValue": 6.67
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.22,
+                    "NSComponent": 0.16,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.26
+                  },
+                  "StationName": "西林",
+                  "StationID": "ESL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 129.9,
+                  "EpicenterDistance": 9.69,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.812,
+                  "StationLongitude": 121.442
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.69,
+                    "NSComponent": 1.5,
+                    "VComponent": 0.79,
+                    "IntScaleValue": 1.84
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "水璉",
+                  "StationID": "SHUL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 234.57,
+                  "EpicenterDistance": 6.03,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.788,
+                  "StationLongitude": 121.563
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.62,
+                    "NSComponent": 6.53,
+                    "VComponent": 1.79,
+                    "IntScaleValue": 2.45
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.1,
+                    "NSComponent": 0.07,
+                    "VComponent": 0.13,
+                    "IntScaleValue": 0.15
+                  },
+                  "StationName": "磯崎",
+                  "StationID": "EGC",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 327.75,
+                  "EpicenterDistance": 6.32,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.708,
+                  "StationLongitude": 121.548
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.93,
+                    "NSComponent": 2.71,
+                    "VComponent": 3.1,
+                    "IntScaleValue": 2.44
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "光復",
+                  "StationID": "EGFH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 42.55,
+                  "EpicenterDistance": 13.12,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.669,
+                  "StationLongitude": 121.428
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.26,
+                    "NSComponent": 1.11,
+                    "VComponent": 0.55,
+                    "IntScaleValue": 1.19
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 208.49,
+                  "EpicenterDistance": 18.62,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.82,
+                    "NSComponent": 1.47,
+                    "VComponent": 1.49,
+                    "IntScaleValue": 2.06
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 174.58,
+                  "EpicenterDistance": 23.39,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.75,
+                    "NSComponent": 0.79,
+                    "VComponent": 0.32,
+                    "IntScaleValue": 0.89
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 202.59,
+                  "EpicenterDistance": 26.33,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/29-03:55花蓮縣秀林鄉發生規模3.8有感地震，最大震度花蓮縣太魯閣、宜蘭縣南澳2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042903550138_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042903550138",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-29 03:55:01",
+          "Source": "中央氣象署",
+          "FocalDepth": 28.4,
+          "Epicenter": {
+            "Location": "花蓮縣政府北北東方  30.4  公里 (位於花蓮縣秀林鄉)",
+            "EpicenterLatitude": 24.26,
+            "EpicenterLongitude": 121.69
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.8
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "花蓮縣、宜蘭縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 5.72,
+                    "NSComponent": 5.5,
+                    "VComponent": 1.11,
+                    "IntScaleValue": 3.14
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.1,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.11
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 32.25,
+                  "EpicenterDistance": 12.96,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.64,
+                    "NSComponent": 1.67,
+                    "VComponent": 1.14,
+                    "IntScaleValue": 1.63
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 226.05,
+                  "EpicenterDistance": 8.23,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 75.17,
+                  "EpicenterDistance": 21.98,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 8.63,
+                    "NSComponent": 6.98,
+                    "VComponent": 2.95,
+                    "IntScaleValue": 3.98
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.12,
+                    "NSComponent": 0.1,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.13
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 197.48,
+                  "EpicenterDistance": 19.59,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.95,
+                    "NSComponent": 1.28,
+                    "VComponent": 1.31,
+                    "IntScaleValue": 1.49
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 211.61,
+                  "EpicenterDistance": 9.35,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.92,
+                    "NSComponent": 3.32,
+                    "VComponent": 2.41,
+                    "IntScaleValue": 2.2
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 203.06,
+                  "EpicenterDistance": 22.61,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.06,
+                    "NSComponent": 1.26,
+                    "VComponent": 0.25,
+                    "IntScaleValue": 0.95
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "南山",
+                  "StationID": "NNS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 122.43,
+                  "EpicenterDistance": 37.23,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.437,
+                  "StationLongitude": 121.381
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2,
+                    "NSComponent": 2.35,
+                    "VComponent": 0.62,
+                    "IntScaleValue": 1.72
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "牛鬥",
+                  "StationID": "ENT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 164.26,
+                  "EpicenterDistance": 43.84,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.638,
+                  "StationLongitude": 121.574
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/28-21:05花蓮縣吉安鄉發生規模3.1有感地震，最大震度花蓮縣鹽寮、花蓮縣花蓮市2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042821052031_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042821052031",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-28 21:05:20",
+          "Source": "中央氣象署",
+          "FocalDepth": 8.9,
+          "Epicenter": {
+            "Location": "花蓮縣政府南南西方  6.6  公里 (位於花蓮縣吉安鄉)",
+            "EpicenterLatitude": 23.94,
+            "EpicenterLongitude": 121.59
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.1
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "花蓮縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 8.58,
+                    "NSComponent": 4.67,
+                    "VComponent": 2.71,
+                    "IntScaleValue": 6.23
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.13,
+                    "NSComponent": 0.12,
+                    "VComponent": 0.06,
+                    "IntScaleValue": 0.15
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 345.74,
+                  "EpicenterDistance": 3.87,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.04,
+                    "NSComponent": 4.12,
+                    "VComponent": 1.49,
+                    "IntScaleValue": 2.74
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.1,
+                    "NSComponent": 0.07,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.11
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 207.54,
+                  "EpicenterDistance": 4.73,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 4.67,
+                    "NSComponent": 5.01,
+                    "VComponent": 3.39,
+                    "IntScaleValue": 3
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.08,
+                    "NSComponent": 0.07,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.08
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 107.37,
+                  "EpicenterDistance": 10.61,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 5,
+                    "NSComponent": 3.99,
+                    "VComponent": 1.47,
+                    "IntScaleValue": 1.6
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "西林",
+                  "StationID": "ESL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 47.83,
+                  "EpicenterDistance": 20.71,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.812,
+                  "StationLongitude": 121.442
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.12,
+                    "NSComponent": 1.31,
+                    "VComponent": 0.73,
+                    "IntScaleValue": 0.94
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.01,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.02
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 187.21,
+                  "EpicenterDistance": 24.76,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/28-20:18臺灣東部海域發生規模3.9有感地震，最大震度花蓮縣鹽寮3級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042820183039_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042820183039",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-28 20:18:30",
+          "Source": "中央氣象署",
+          "FocalDepth": 23.7,
+          "Epicenter": {
+            "Location": "花蓮縣政府東南東方  14.0  公里 (位於臺灣東部海域)",
+            "EpicenterLatitude": 23.95,
+            "EpicenterLongitude": 121.75
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.9
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "南投縣地區",
+              "CountyName": "南投縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.34,
+                    "NSComponent": 0.85,
+                    "VComponent": 0.46,
+                    "IntScaleValue": 1.38
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "合歡山",
+                  "StationID": "WHF",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 113.84,
+                  "EpicenterDistance": 53.13,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.143,
+                  "StationLongitude": 121.273
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度3級地區",
+              "CountyName": "花蓮縣",
+              "AreaIntensity": "3級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "南投縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "3級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 7.07,
+                    "NSComponent": 7.66,
+                    "VComponent": 2.68,
+                    "IntScaleValue": 8.01
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.27,
+                    "NSComponent": 0.21,
+                    "VComponent": 0.08,
+                    "IntScaleValue": 0.28
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 71.23,
+                  "EpicenterDistance": 15.98,
+                  "SeismicIntensity": "3級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.54,
+                    "NSComponent": 3.6,
+                    "VComponent": 1.08,
+                    "IntScaleValue": 3.24
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.11,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.11
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 101.41,
+                  "EpicenterDistance": 14.18,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.04,
+                    "NSComponent": 4.48,
+                    "VComponent": 0.86,
+                    "IntScaleValue": 3.26
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.08,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.08
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 150.79,
+                  "EpicenterDistance": 26.55,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.58,
+                    "NSComponent": 0.88,
+                    "VComponent": 0.27,
+                    "IntScaleValue": 0.89
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "水璉",
+                  "StationID": "SHUL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 46.69,
+                  "EpicenterDistance": 26.26,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.788,
+                  "StationLongitude": 121.563
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.31,
+                    "NSComponent": 2.99,
+                    "VComponent": 1.78,
+                    "IntScaleValue": 2.12
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 93.89,
+                  "EpicenterDistance": 26.27,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.11,
+                    "NSComponent": 1.94,
+                    "VComponent": 0.26,
+                    "IntScaleValue": 1.59
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "磯崎",
+                  "StationID": "EGC",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 37.56,
+                  "EpicenterDistance": 33.88,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.708,
+                  "StationLongitude": 121.548
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.26,
+                    "NSComponent": 0.98,
+                    "VComponent": 0.51,
+                    "IntScaleValue": 0.85
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "西林",
+                  "StationID": "ESL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 64.06,
+                  "EpicenterDistance": 34.96,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.812,
+                  "StationLongitude": 121.442
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.06,
+                    "NSComponent": 0.99,
+                    "VComponent": 0.52,
+                    "IntScaleValue": 0.84
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "光復",
+                  "StationID": "EGFH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 46.54,
+                  "EpicenterDistance": 45.32,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.669,
+                  "StationLongitude": 121.428
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 136.24,
+                  "EpicenterDistance": 39.48,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/28-15:29花蓮縣近海發生規模3.8有感地震，最大震度花蓮縣太魯閣、花蓮縣花蓮市、南投縣合歡山、臺中市梨山1級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042815290438_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042815290438",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-28 15:29:04",
+          "Source": "中央氣象署",
+          "FocalDepth": 41.6,
+          "Epicenter": {
+            "Location": "花蓮縣政府北北東方  13.2  公里 (位於花蓮縣近海)",
+            "EpicenterLatitude": 24.1,
+            "EpicenterLongitude": 121.66
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.8
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "南投縣地區",
+              "CountyName": "南投縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.87,
+                    "NSComponent": 0.57,
+                    "VComponent": 0.24,
+                    "IntScaleValue": 0.83
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.02
+                  },
+                  "StationName": "合歡山",
+                  "StationID": "WHF",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 96.43,
+                  "EpicenterDistance": 39.89,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.143,
+                  "StationLongitude": 121.273
+                }
+              ]
+            },
+            {
+              "AreaDesc": "臺中市地區",
+              "CountyName": "臺中市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.75,
+                    "NSComponent": 0.57,
+                    "VComponent": 0.26,
+                    "IntScaleValue": 0.84
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "梨山",
+                  "StationID": "FUSS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 110.62,
+                  "EpicenterDistance": 45.47,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.248,
+                  "StationLongitude": 121.244
+                }
+              ]
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.98,
+                    "NSComponent": 3.37,
+                    "VComponent": 0.92,
+                    "IntScaleValue": 2.29
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.06
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 146.85,
+                  "EpicenterDistance": 7.36,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.09,
+                    "NSComponent": 0.84,
+                    "VComponent": 0.44,
+                    "IntScaleValue": 1.06
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 19.22,
+                  "EpicenterDistance": 15.05,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.41,
+                    "NSComponent": 1.47,
+                    "VComponent": 0.67,
+                    "IntScaleValue": 1.42
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 15.6,
+                  "EpicenterDistance": 23,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.2,
+                    "NSComponent": 1.85,
+                    "VComponent": 1.11,
+                    "IntScaleValue": 1.61
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 48.58,
+                  "EpicenterDistance": 23.02,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 122.06,
+                  "EpicenterDistance": 21.67,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "花蓮縣、南投縣、臺中市",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/28-12:02花蓮縣近海發生規模3.5有感地震，最大震度花蓮縣太魯閣2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042812021035_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042812021035",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-28 12:02:10",
+          "Source": "中央氣象署",
+          "FocalDepth": 5,
+          "Epicenter": {
+            "Location": "花蓮縣政府北北東方  20.2  公里 (位於花蓮縣近海)",
+            "EpicenterLatitude": 24.16,
+            "EpicenterLongitude": 121.7
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.5
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "花蓮縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "宜蘭縣",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 14.12,
+                    "NSComponent": 10.48,
+                    "VComponent": 3.94,
+                    "IntScaleValue": 6.48
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.13,
+                    "NSComponent": 0.14,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.17
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 89.02,
+                  "EpicenterDistance": 7.33,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.79,
+                    "NSComponent": 3.28,
+                    "VComponent": 2.36,
+                    "IntScaleValue": 3.92
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.1,
+                    "NSComponent": 0.1,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.12
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 198.46,
+                  "EpicenterDistance": 17.45,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.03,
+                    "NSComponent": 1.25,
+                    "VComponent": 0.62,
+                    "IntScaleValue": 0.89
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.02
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 43.7,
+                  "EpicenterDistance": 29.76,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.65,
+                    "NSComponent": 0.77,
+                    "VComponent": 0.3,
+                    "IntScaleValue": 0.86
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "鹽寮",
+                  "StationID": "EYL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 18.45,
+                  "EpicenterDistance": 29.98,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.904,
+                  "StationLongitude": 121.602
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 103.53,
+                  "EpicenterDistance": 22.28,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.14,
+                    "NSComponent": 1.12,
+                    "VComponent": 1.2,
+                    "IntScaleValue": 1.15
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 193.46,
+                  "EpicenterDistance": 19.33,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.08,
+                    "NSComponent": 2.74,
+                    "VComponent": 0.83,
+                    "IntScaleValue": 1.61
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 190.52,
+                  "EpicenterDistance": 30.03,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.84,
+                    "NSComponent": 0.55,
+                    "VComponent": 0.21,
+                    "IntScaleValue": 0.82
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.01,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "冬山",
+                  "StationID": "NDS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 182.41,
+                  "EpicenterDistance": 52.66,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.634,
+                  "StationLongitude": 121.717
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/28-09:45花蓮縣近海發生規模3.6有感地震，最大震度宜蘭縣澳花、花蓮縣和平2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042809455636_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042809455636",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-28 09:45:56",
+          "Source": "中央氣象署",
+          "FocalDepth": 17.8,
+          "Epicenter": {
+            "Location": "花蓮縣政府北北東方  32.1  公里 (位於花蓮縣近海)",
+            "EpicenterLatitude": 24.26,
+            "EpicenterLongitude": 121.74
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.6
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "宜蘭縣、花蓮縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.55,
+                    "NSComponent": 3.82,
+                    "VComponent": 2.76,
+                    "IntScaleValue": 3.95
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.09,
+                    "NSComponent": 0.1,
+                    "VComponent": 0.05,
+                    "IntScaleValue": 0.12
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 188.02,
+                  "EpicenterDistance": 5.62,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 12.21,
+                    "NSComponent": 11.93,
+                    "VComponent": 4.5,
+                    "IntScaleValue": 7.1
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.13,
+                    "NSComponent": 0.18,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.18
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 47.36,
+                  "EpicenterDistance": 16.4,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.85,
+                    "NSComponent": 0.95,
+                    "VComponent": 0.98,
+                    "IntScaleValue": 0.94
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.01,
+                    "NSComponent": 0.02,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.02
+                  },
+                  "StationName": "秀林",
+                  "StationID": "TWD",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 35.26,
+                  "EpicenterDistance": 24.14,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.081,
+                  "StationLongitude": 121.605
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 77.66,
+                  "EpicenterDistance": 27.02,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.37,
+                    "NSComponent": 3.14,
+                    "VComponent": 2.04,
+                    "IntScaleValue": 3.36
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.09,
+                    "NSComponent": 0.08,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.11
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 178.24,
+                  "EpicenterDistance": 7.82,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.55,
+                    "NSComponent": 3.51,
+                    "VComponent": 1.14,
+                    "IntScaleValue": 1.81
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 182.3,
+                  "EpicenterDistance": 18.55,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.67,
+                    "NSComponent": 1.71,
+                    "VComponent": 1.48,
+                    "IntScaleValue": 1.67
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 190.2,
+                  "EpicenterDistance": 20.99,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.75,
+                    "NSComponent": 1,
+                    "VComponent": 0.25,
+                    "IntScaleValue": 0.85
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "南山",
+                  "StationID": "NNS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 118.45,
+                  "EpicenterDistance": 41.59,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.437,
+                  "StationLongitude": 121.381
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.81,
+                    "NSComponent": 1.15,
+                    "VComponent": 0.18,
+                    "IntScaleValue": 1.09
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "牛鬥",
+                  "StationID": "ENT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 157.95,
+                  "EpicenterDistance": 45.37,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.638,
+                  "StationLongitude": 121.574
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "EarthquakeNo": 113000,
+        "ReportType": "地震報告",
+        "ReportColor": "綠色",
+        "ReportContent": "04/28-09:32花蓮縣秀林鄉發生規模3.4有感地震，最大震度花蓮縣太魯閣、南投縣合歡山2級。",
+        "ReportImageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202404/2024042809324734_H.png",
+        "ReportRemark": "本報告係中央氣象署地震觀測網即時地震資料地震速報之結果。",
+        "Web": "https://scweb.cwa.gov.tw/zh-tw/earthquake/details/2024042809324734",
+        "EarthquakeInfo": {
+          "OriginTime": "2024-04-28 09:32:47",
+          "Source": "中央氣象署",
+          "FocalDepth": 19.8,
+          "Epicenter": {
+            "Location": "花蓮縣政府北方  22.5  公里 (位於花蓮縣秀林鄉)",
+            "EpicenterLatitude": 24.19,
+            "EpicenterLongitude": 121.59
+          },
+          "EarthquakeMagnitude": {
+            "MagnitudeType": "芮氏規模",
+            "MagnitudeValue": 3.4
+          }
+        },
+        "Intensity": {
+          "ShakingArea": [
+            {
+              "AreaDesc": "南投縣地區",
+              "CountyName": "南投縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.83,
+                    "NSComponent": 2.18,
+                    "VComponent": 0.7,
+                    "IntScaleValue": 2.69
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.06,
+                    "NSComponent": 0.05,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "合歡山",
+                  "StationID": "WHF",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 80.47,
+                  "EpicenterDistance": 32.35,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.143,
+                  "StationLongitude": 121.273
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度2級地區",
+              "CountyName": "花蓮縣、南投縣",
+              "AreaIntensity": "2級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "臺中市地區",
+              "CountyName": "臺中市",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 0.97,
+                    "NSComponent": 1.28,
+                    "VComponent": 1.05,
+                    "IntScaleValue": 1.07
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "梨山",
+                  "StationID": "FUSS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 100.09,
+                  "EpicenterDistance": 35.36,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.248,
+                  "StationLongitude": 121.244
+                }
+              ]
+            },
+            {
+              "AreaDesc": "最大震度1級地區",
+              "CountyName": "宜蘭縣、臺中市",
+              "AreaIntensity": "1級",
+              "EqStation": []
+            },
+            {
+              "AreaDesc": "花蓮縣地區",
+              "CountyName": "花蓮縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "2級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 18.22,
+                    "NSComponent": 24.45,
+                    "VComponent": 8.77,
+                    "IntScaleValue": 7.83
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.14,
+                    "NSComponent": 0.25,
+                    "VComponent": 0.08,
+                    "IntScaleValue": 0.26
+                  },
+                  "StationName": "太魯閣",
+                  "StationID": "ETL",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 314.69,
+                  "EpicenterDistance": 5.2,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.159,
+                  "StationLongitude": 121.623
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.2,
+                    "NSComponent": 3.64,
+                    "VComponent": 3.42,
+                    "IntScaleValue": 2.66
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.06,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.07
+                  },
+                  "StationName": "和平",
+                  "StationID": "EHP",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 231.79,
+                  "EpicenterDistance": 21.05,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.309,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "StationName": "西寶",
+                  "StationID": "ETLH",
+                  "BackAzimuth": 98.97,
+                  "EpicenterDistance": 10.77,
+                  "SeismicIntensity": "2級",
+                  "StationLatitude": 24.207,
+                  "StationLongitude": 121.482
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.21,
+                    "NSComponent": 2.12,
+                    "VComponent": 2.48,
+                    "IntScaleValue": 1.73
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.04,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "秀林",
+                  "StationID": "TWD",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 351.51,
+                  "EpicenterDistance": 12.39,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.081,
+                  "StationLongitude": 121.605
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.2,
+                    "NSComponent": 1.82,
+                    "VComponent": 1.07,
+                    "IntScaleValue": 1.68
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "花蓮市",
+                  "StationID": "HWA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 353.41,
+                  "EpicenterDistance": 24.19,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.975,
+                  "StationLongitude": 121.614
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 3.31,
+                    "NSComponent": 4.14,
+                    "VComponent": 2.96,
+                    "IntScaleValue": 1.6
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "銅門",
+                  "StationID": "ETM",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 20.82,
+                  "EpicenterDistance": 26.8,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 23.966,
+                  "StationLongitude": 121.493
+                }
+              ]
+            },
+            {
+              "AreaDesc": "宜蘭縣地區",
+              "CountyName": "宜蘭縣",
+              "InfoStatus": "observe",
+              "AreaIntensity": "1級",
+              "EqStation": [
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.95,
+                    "NSComponent": 1.92,
+                    "VComponent": 1.7,
+                    "IntScaleValue": 1.3
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.04,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.03,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "澳花",
+                  "StationID": "EAH",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 225.45,
+                  "EpicenterDistance": 21.77,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.329,
+                  "StationLongitude": 121.739
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 6.9,
+                    "NSComponent": 4.62,
+                    "VComponent": 1.52,
+                    "IntScaleValue": 1.63
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.05,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "南澳",
+                  "StationID": "ENA",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 212.4,
+                  "EpicenterDistance": 30.78,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.426,
+                  "StationLongitude": 121.749
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.2,
+                    "NSComponent": 1.96,
+                    "VComponent": 1.66,
+                    "IntScaleValue": 1.28
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.03,
+                    "VComponent": 0.02,
+                    "IntScaleValue": 0.04
+                  },
+                  "StationName": "武塔",
+                  "StationID": "EWT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 214.7,
+                  "EpicenterDistance": 34.19,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.445,
+                  "StationLongitude": 121.778
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 2.38,
+                    "NSComponent": 2.28,
+                    "VComponent": 0.61,
+                    "IntScaleValue": 1.86
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.03,
+                    "NSComponent": 0.04,
+                    "VComponent": 0.01,
+                    "IntScaleValue": 0.05
+                  },
+                  "StationName": "南山",
+                  "StationID": "NNS",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 142.63,
+                  "EpicenterDistance": 34.31,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.437,
+                  "StationLongitude": 121.381
+                },
+                {
+                  "pga": {
+                    "unit": "gal",
+                    "EWComponent": 1.09,
+                    "NSComponent": 1.37,
+                    "VComponent": 0.26,
+                    "IntScaleValue": 1.33
+                  },
+                  "pgv": {
+                    "unit": "kine",
+                    "EWComponent": 0.02,
+                    "NSComponent": 0.03,
+                    "VComponent": 0,
+                    "IntScaleValue": 0.03
+                  },
+                  "StationName": "牛鬥",
+                  "StationID": "ENT",
+                  "InfoStatus": "observe",
+                  "BackAzimuth": 178.5,
+                  "EpicenterDistance": 49.52,
+                  "SeismicIntensity": "1級",
+                  "StationLatitude": 24.638,
+                  "StationLongitude": 121.574
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

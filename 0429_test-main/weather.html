@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <!-- <script src="/dist/augurio-taiwan.min.css"></script> -->
+    <link rel="stylesheet" href="./weather.css">
+    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.js"></script>
+    <script src="./weather.js" defer></script>
+    <script src="./jquery-3.7.1.js"></script>
+    <script src="/bootstrap.min.css"></script>
+</head>
+<style>
+    div[class^="d-"] {
+        background-color: yellow;
+        border: 1px solid blue;
+    }
+
+    div[class^="p-"] {
+        background-color: rgba(8, 30, 86, 0.232);
+        border: 1px solid rgb(93, 17, 72);
+
+    }
+
+    .weather-icon {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        img {
+            height: 90% !important;
+        }
+    }
+
+    .table {
+        border: 2px solid red;
+    }
+
+    .table td {
+        text-align: justify;
+        /* 填满整个单元格 */
+    }
+
+    .cloud-container {
+        float: left;
+        position: absolute;
+        height: 873px;
+        top: 50px;
+        /* border: 2px solid red; */
+        /* 设置容器的高度 */
+        overflow: hidden;
+        /* 隐藏超出容器的部分 */
+        /* z-index: 5; */
+    }
+
+    .cloud {
+        position: relative;
+        /* 相对定位 */
+        animation: moveCloud 15s infinite alternate;
+        /* 添加动画效果 */
+        top: -1000px;
+        /* overflow: hidden; */
+        /* z-index: 6; */
+
+    }
+
+    .cloud img {
+        position: relative;
+
+        width: 100%;
+        opacity: 0.5;
+        /* z-index: 5; */
+
+    }
+
+
+    .colored-cloud {
+        /* 亮度 飽和 色調旋轉  */
+        filter: brightness(80%) saturate(120%) hue-rotate(180deg);
+        /* 调整亮度、饱和度和色相 */
+    }
+
+    .gallery img {
+        width: 100px;
+    }
+
+    .gallery {
+        display: inline;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container-fuuid">
+            <!-- header 分三區塊 加起來共12-->
+            <div class="row">
+                <div class="col-sm-4 " id="header-container">
+                    <div class="header-stamp">
+                        <img src="/img/螢幕擷取畫面 2024-05-09 104632.png" alt="">
+                    </div>
+                    <!-- <div class="food"></div> -->
+                </div>
+                <div class="col-sm-4  d-flex justify-content-end" id="header-txt">
+                    <div class="header-tag">
+                        <input type="button" id="travelinfo" value="旅遊資訊" onclick="infoClicked()">
+                        <input type="button" id="travelinfo1" value="成為導遊" onclick="infoClicked()">
+                        <!-- <select id="language-select"> -->
+                        <!-- <option value="繁體中文">繁體中文</option> -->
+                        <!-- <option value="英文">英文</option> -->
+                        <!-- 添加其他语言选项 -->
+                        </select>
+                        <input type="button" id="travelinfo2" value="註冊會員" onclick="registerClicked()">
+                        <input type="button" id="travelinfo3" value="會員登入" onclick="loginClicked()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="bgi" style="height: 800px; background-image: url('/img/taipei101.jpeg'); background-size: cover;">
+        </div>
+        <!-- 雲朵 -->
+        <div class="cloud-container" id="parallax">
+            <div class="cloud">
+                <img src="/img/Lovepik_com-611632343-White cartoon clouds vector elements.png" alt="">
+            </div>
+        </div>
+        <!-- 預留放API位置 -->
+        <div class="Taiwans">
+            <svg width="750" height="600" style="position: absolute; left: -167px; top: 57px; z-index: 2;"></svg>
+        </div>
+        <div class="weatherinfo">
+            <div class="p-2 d-flex flex-fill myb-1" style="height: 50px;">
+                <div class="h-100 p-2 flex-fill bd-heighlight">
+                    <span class="country" id="country"></span>
+                </div>
+            </div>
+            <div class="w-100 h-40 d-flex flex-row myb-2">
+                <div class="p-2 w-55 flex-fill bd-heighlight" style="height:80%" id="info1">
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%;">
+                        <span class="dateline"></span>
+                    </div>
+                    <!-- <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="time"></span>
+                    </div> -->
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 30%">
+                        <span class="weather-icon" style="width: 50px;height: 50px; object-fit:contain;"></span>
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="temp">
+                            <i class="low"></i>
+                            <sup class="start"></sup>
+                            <i class="height"></i>
+                            <sup class="end"></sup>
+                        </span>
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 18%">
+                        <span class="rain">
+                            <i class="icon-umbrella">
+                                <img src="/dist/雨傘.svg" alt="https://699pic.com/copyright.html">"10%"
+                            </i>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-2 w-55 flex-fill bd-heighlight" style="height:80%" id="info2">
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%;">
+                        <span class="dateline"></span>
+
+                    </div>
+                    <!-- <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="time"></span>
+
+                    </div> -->
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 30%">
+                        <span class="weather-icon" style="width: 50px;height: 50px; object-fit:contain;"></span>
+
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="temp">
+                            <i class="low"></i>
+                            <sup class="start"></sup>
+                            <i class="height"></i>
+                            <sup class="end"></sup>
+                        </span>
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 18%">
+                        <span class="rain">
+                            <span class="rain">
+                                <i class="icon-umbrella">
+                                    <img src="/dist/雨傘.svg" alt="https://699pic.com/copyright.html">"10%"
+                                </i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-2 w-55 flex-fill bd-heighlight" style="height:80%" id="info3">
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%;">
+                        <span class="dateline"></span>
+
+                    </div>
+                    <!-- <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="time"></span>
+
+                    </div> -->
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 30%">
+                        <span class="weather-icon" style="width: 50px;height: 50px; object-fit:contain;"></span>
+
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="temp">
+                            <i class="low"></i>
+                            <sup class="start"></sup>
+                            <i class="height"></i>
+                            <sup class="end"></sup>
+                        </span>
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 18%">
+                        <span class="rain">
+                            <span class="rain">
+                                <i class="icon-umbrella">
+                                    <img src="/dist/雨傘.svg" alt="https://699pic.com/copyright.html">"10%"
+                                </i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-2 w-55 flex-fill bd-heighlight" style="height:80%" id="info4">
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%;">
+                        <span class="dateline"></span>
+
+                    </div>
+                    <!-- <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="time"></span>
+
+                    </div> -->
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 30%">
+                        <span class="weather-icon" style="width: 50px;height: 50px; object-fit:contain;"></span>
+
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="temp">
+                            <i class="low"></i>
+                            <sup class="start"></sup>
+                            <i class="height"></i>
+                            <sup class="end"></sup>
+                        </span>
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 18%">
+                        <span class="rain">
+                            <span class="rain">
+                                <i class="icon-umbrella">
+                                    <img src="/dist/雨傘.svg" alt="https://699pic.com/copyright.html">"10%"
+                                </i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-2 w-55 flex-fill bd-heighlight" style="height:80%" id="info5">
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%;">
+                        <span class="dateline"></span>
+
+                    </div>
+                    <!-- <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="time"></span>
+
+                    </div> -->
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 30%">
+                        <span class="weather-icon" style="width: 50px;height: 50px; object-fit:contain;"></span>
+
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="temp">
+                            <i class="low"></i>
+                            <sup class="start"></sup>
+                            <i class="height"></i>
+                            <sup class="end"></sup>
+                        </span>
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 18%">
+                        <span class="rain">
+                            <span class="rain">
+                                <i class="icon-umbrella">
+                                    <img src="/dist/雨傘.svg" alt="https://699pic.com/copyright.html">"10%"
+                                </i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-2 w-55 flex-fill bd-heighlight" style="height:80%" id="info6">
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%;">
+                        <span class="dateline"></span>
+
+                    </div>
+                    <!-- <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="time"></span>
+
+                    </div> -->
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 30%">
+                        <span class="weather-icon" style="width: 50px;height: 50px; object-fit:contain;"></span>
+
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="temp">
+                            <i class="low"></i>
+                            <sup class="start"></sup>
+                            <i class="height"></i>
+                            <sup class="end"></sup>
+                        </span>
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 18%">
+                        <span class="rain">
+                            <span class="rain">
+                                <i class="icon-umbrella">
+                                    <img src="/dist/雨傘.svg" alt="https://699pic.com/copyright.html">"10%"
+                                </i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-2 w-55 flex-fill bd-heighlight" style="height:80%" id="info7">
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%;">
+                        <span class="dateline"></span>
+
+                    </div>
+                    <!-- <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="time"></span>
+
+                    </div> -->
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 30%">
+                        <span class="weather-icon" style="width: 50px;height: 50px; object-fit:contain;"></span>
+
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 15%">
+                        <span class="temp">
+                            <i class="low"></i>
+                            <sup class="start"></sup>
+                            <i class="height"></i>
+                            <sup class="end"></sup>
+                        </span>
+                    </div>
+                    <div class="p-2 d-inline-block flex-fill bd-heighlight" style="width: 100%;height: 18%">
+                        <span class="rain">
+                            <span class="rain">
+                                <i class="icon-umbrella">
+                                    <img src="/dist/雨傘.svg" alt="https://699pic.com/copyright.html">"10%"
+                                </i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 h-50 p d-flex flex-row">
+                <div class="p-2 flex-fill bd-heighlight " id="info8">
+                    <table class="table table-striped" style="width: 200px;">
+                        <thead>
+                            <tr>
+                                <th id="pop" colspan="2" class="table-success">熱門行程</th>
+                                <!-- 将 "熱門行程" 单元格合并到下一个空的单元格中 -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="cityTd" class="table-primary">台北市</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">
+                                    <span class="top">TOP1:逢甲一日遊</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-primary">
+                                    <span class="top">TOP1:逢甲二日遊</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">
+                                    <span class="top">TOP1:逢甲三日遊</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-primary">
+                                    <span class="top">TOP1:逢甲四日遊</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">
+                                    <span class="top">TOP1:逢甲五日遊</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container" id="info9">
+                    <div class="d-flex flex-row" style="overflow-x: auto;">
+                        <div class="p-2 flex-fill bd-heighlight responsive"style="width:400px;">
+                            <div class="gallery">
+                                <a target="_blank" href="img_5terre.jpg">
+                                    <img src="/img/台灣特色ICON-天燈.png" alt="Cinque Terre">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+
+                        <div class="p-2 flex-fill bd-heighlight responsive"style="width:400px;">
+                            <div class="gallery">
+                                <a target="_blank" href="img_forest.jpg">
+                                    <img src="/img/台灣特色ICON-天燈.png" alt="Forest">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+
+                        <div class="p-2 flex-fill bd-heighlight responsive"style="width:400px;">
+                            <div class="gallery">
+                                <a target="_blank" href="img_lights.jpg">
+                                    <img src="/img/台灣特色ICON-天燈.png" alt="Northern Lights">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+
+                        <div class="p-2 flex-fill bd-heighlight responsive"style="width:400px;">
+                            <div class="gallery">
+                                <a target="_blank" href="img_mountains.jpg">
+                                    <img src="/img/台灣特色ICON-天燈.png" alt="Mountains">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="countyInfo"></div>
+        <div id="svg-container"></div>
+    </section>
+    <script>
+        let weather = [], city = [], minTemp = [], maxTemp = [];
+        // var x = document.getElementById("A63000")
+        // console.log(x)
+
+        function getWeatherIcon(weatherCode) {
+            // 将天气代码转换为两位数的字符串形式
+            weatherCode = `${weatherCode}`.padStart(2, "0");
+            // 返回天气图标的 URL，天气图标通常存储在特定路径下，路径中包含天气代码
+            return `https://www.cwa.gov.tw/V8/assets/img/weather_icons/weathers/svg_icon/day/${weatherCode}.svg`;
+        }
+
+        function setInfomation(cityName) {
+            let index = city.indexOf(cityName);
+
+            $('#country').text(cityName);
+            $('#cityTd').text(cityName);
+            $('#cityTd1').text(cityName);
+
+            let targetWeather = weather[index];// 从数组中获取特定索引位置的天气数据
+
+            let targetMaxTemp = maxTemp[index];
+            // console.log(maxTemp);
+            let targetMinTemp = minTemp[index];
+
+            // 遍历该天气数据中的时间信息
+            $(targetWeather).find("time").each(function (index, elm) {       // .each(function (elm))只有找到 time的所有tag元素
+
+                // let timeElm =$(".time")[index];   //<span class="time"></span>
+                console.log(targetWeather);
+                let timeElm = $($(".time")[index]);
+                // console.log(timeElm);//取得.time 索引個數
+                let weatherIconElm = $($(".weather-icon")[index]);
+                // console.log(weatherIconElm); //取得.weather-icon 個術數輛 兩個
+                let datelineElm = $($(".dateline")[index]);
+                // console.log(datelineElm)
+                // --------------分隔線-------------------------
+                // 获取开始时间和结束时间，并提取小时和分钟信息
+                // 从天气数据中找到开始时间元素，并获取其文本内容   
+
+                // 获取 popular1 到 popular5 元素的文本内容
+
+                $(elm).find("popular").each(function (popIndex, popElm) {
+                    // 获取热门景点的文本内容
+                    let popular = $(popElm).text();
+                    // 使用类选择器来选择相应的<span>元素，并填充文本内容
+                    $('.top').eq(popIndex).text("TOP" + (popIndex + 1) + ": " + popular);
+                });
+
+                let startTime = $(elm).find("startTime").text();
+                let month = startTime.substring(6, 7);
+                let date = startTime.substring(8, 10);
+
+                // 从开始时间中提取小时部分，并将其转换为整数
+                let startHour = parseInt(startTime.substring(11, 13));
+                // 从开始时间中提取分钟部分，并将其转换为整数
+                let startMinute = parseInt(startTime.substring(14, 16));
+                // 从天气数据中找到结束时间元素，并获取其文本内容
+                let endTime = $(elm).find("endTime").text();
+                // 从结束时间中提取小时部分，并将其转换为整数
+                let endHour = parseInt(endTime.substring(11, 13));
+                // 从结束时间中提取分钟部分，并将其转换为整数
+                let endMinute = parseInt(endTime.substring(14, 16));
+                // --------------分隔線-------------------------
+                // $(targetTemp).find("time").each(function (index, elm) {
+                //     let heightElm = $($(".height")[index]);
+                //     let maxT = $(elm).find("parameter").each(index, elm).text();
+                //     console.log(maxT)
+                $(targetMaxTemp).find("time").each(function (index, elm) {
+                    // console.log(targetMaxTemp);//ok
+                    let heightElm = $($(".height")[index]);
+                    // console.log(heightElm)//ok
+                    let maxT = $(elm).find("parameter").text();
+                    $(".height").eq(index).text(maxT);
+
+                })
+                $(targetMinTemp).find("time").each(function (index, elm) {
+                    let lowElm = $($(".low")[index]);
+                    let minT = $(elm).find("parameter").text();
+                    $(".low").eq(index).text(minT);
+                })
+                // let tempStr=`${minT}-${maxT}`;
+
+                // 判斷是否在白天時間範圍內
+                // if ((startHour >= 6 && startHour < 18) || (startHour >= 18 && startHour < 24)) {
+                // console.log("白天");
+                // } else {
+                // console.log("晚天");
+                // };
+                // 更新时间元素的文本内容，格式为：开始时间 - 结束时间
+                // timeElm.text(`${startHour.toString().padStart(2, "0")}:${startMinute.toString().padStart(2, "0")} - ${endHour.toString().padStart(2, "0")}:${endMinute.toString().padStart(2, "0")}`)
+                // 更新天气图标元素的 HTML 内容，使用相应的天气图标
+                weatherIconElm.html(`<img src='${getWeatherIcon($(elm).find("parameterValue").text())}'>`)
+                // 输出调试信息，显示时间、开始时间、小时和分钟 
+                console.log($(elm).text(), "\n", startTime, "\n", startHour, "\n", startMinute);
+                datelineElm.text(`${month}月${date}日`);
+                // $(".temp").eq(index).text(tempStr);
+
+            })
+            $('.start').text('°' + '_').show();
+            $('.end').text('°').show();
+        }
+
+        $(document).ready(
+            function () {
+                setTimeout(
+                    () => {
+
+                        $("path").on("click", (event) => {
+
+                            let index = city.indexOf($(event.target).text());
+                            console.log(index);
+
+                            let targetCity = city[index];
+                            console.log(targetCity);
+                            setInfomation(targetCity);
+                        });
+                        setInfomation("臺北市");
+                    },
+                    1000
+                )
+                // 網頁與伺服器進行通訊，
+                // 取得資料或更新網頁內容，而不需要重新載入整個頁面
+                var xhr = new XMLHttpRequest();
+                // 當XMLHttpRequest物件完成載入時所要執行的函式。
+                xhr.onload = function () {
+                    // console.log(xhr.responseText);
+
+
+                    var parser = new DOMParser();
+                    // 宣告一個變數將xml轉乘string存到變數
+                    var weatherXML = parser.parseFromString(xhr.responseText, "application/xml");
+                    // console.log(weatherXML);
+                    // 宣告一個變數利用jq.find 標籤名將所有的索引跟元素找出存到city並將元素印出
+
+
+                    var locations = $(weatherXML).find("locationName").each(function (index, elm) {
+                        city.push($(elm).text())
+
+                    })
+
+                    $(weatherXML).find("weatherElement").each(function (index, weatherElement) {
+                        if ($(weatherElement).find("elementName").text() == "Wx") {
+                            weather.push(weatherElement)
+                        }
+                    })
+                    $(weatherXML).find("weatherElement").each(function (index, weatherElement) {
+                        if ($(weatherElement).find("elementName").text() == "MaxT") {
+                            maxTemp.push(weatherElement)
+                        }// console.log(maxTemp);//ok
+                    })
+
+                    $(weatherXML).find("weatherElement").each(function (index, weatherElement) {
+                        if ($(weatherElement).find("elementName").text() == "MinT") {
+                            minTemp.push(weatherElement)
+                            // console.log(minTemp);//ok
+                        }
+                    })
+                }
+                xhr.open('GET', '/dist/F-C0032-005test.xml');
+                xhr.send();
+                $(".weatherinfo").show();
+            }
+        )
+        function infoCliced() {
+            // 处理点击放大镜图标的事件
+            // 这里可以添加搜索逻辑
+            alert("搜索功能尚未实现！");
+
+        } function registerClicked() {
+            // 处理点击放大镜图标的事件
+            // 这里可以添加搜索逻辑
+            alert("搜索功能尚未实现！");
+
+        } function loginClicked() {
+            // 处理点击放大镜图标的事件
+            // 这里可以添加搜索逻辑
+            alert("搜索功能尚未实现！");
+
+        }
+        window.addEventListener('scroll', function () {
+            var scrolled = window.scrollY;
+            var cloudContainer = document.getElementById('parallax');
+            cloudContainer.style.transform = 'translateY(' + (scrolled * 0.3) + 'px)'; // 控制滚动时的速度
+        });
+
+
+
+
+
+    </script>
+    <!-- <img src="/dist/COUNTY_MOI_1090820.json" alt=""> -->
+    <!-- <img src="/dist/晚晴.png" width="75"height="75" alt="" id="nightsunny">
+    <img src="/dist/晚雨.png"  width="75"height="75"  alt="" id="nightrain">
+    <img src="/dist/晴天.png"  width="75"height="75" alt="" id="sunny">
+    <img src="/dist/晴雨.png"  width="75"height="75" alt="" id="rain"> -->
+    <!-- <img src="/dist/台灣特色ICON-台北101.png" alt=""> -->
+</body>
+
+
+</html>

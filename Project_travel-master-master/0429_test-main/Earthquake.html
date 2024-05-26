@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="/0429_test-main/jquery-3.7.1.js"></script>
+
+  <link rel="stylesheet" href="./Earthquake.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./E-A0015-005.json">
+  <link rel="stylesheet" href="/bootstrap.min.css">
+
+<!-- 字體 -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <script src="/dist/augurio-taiwan.min.css"></script> -->
+
+</head>
+</head>
+
+<body id="body" >
+
+
+
+  <!-- ------------------------------------------- -->
+
+  <div class="container-fluid px-0 ">
+
+    <div class="row row-cols-1">
+      <div class="col">
+        <div class="col fixed-top">      <!-- 固定上方 -->  
+      
+          <nav class="navbar navbar-expand-sm " id="head">
+ <img src="/logo.png" alt="" width="200px">
+            <div class="container-fluid justify-content-end  px-0">
+
+             
+              <!-- 大小切換 -->
+          <button type="button" class="btn btn-outline-secondary m-1" id="big">大</button>
+     
+          <button type="button" class="btn btn-outline-secondary m-2" id="sm">小</button>
+
+              <!-- 頁首 -->
+              <ul class="navbar-nav ">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">旅遊資訊</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">自訂行程</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">景點介紹</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">會員登入</a>
+                </li>
+              </ul>
+            </div>
+
+
+
+
+
+          </nav>
+
+
+
+</div>
+
+
+
+
+
+           <!--=== Breadcrumbs ===-->
+
+          
+
+<!--=== Breadcrumbs    end===-->
+
+
+<!-- ============================================================ -->
+
+<section class="banner ">
+  <!-- <nav style="--bs-breadcrumb-divider: '>'"  aria-label="breadcrumb">
+          <ol class="breadcrumb ">
+            <li class="breadcrumb-item p-2"><a href="#"  id="bread">首頁</a></li>
+            <li class="breadcrumb-item p-2 active" aria-current="page" style="color: white;">旅遊資訊</li>
+          </ol>
+        </nav> -->
+
+
+
+        
+<!-- <div class="bgm">
+<div class="banner-body">
+  <img class="banner-img  banner-img-mo" src="/景點圖片/一中.png" alt="" width="260px" height="364">
+  <img class="banner-img banner-img-ph" src="/景點圖片/大樓.png" alt="" width="466" height="651">
+  <img class="banner-img banner-img-pad" src="/景點圖片/瑪麗.png" alt="" width="356" height="545">
+  </div>
+
+
+</div> -->
+
+
+<!-- <------------> 
+<div class="banner-container container auto">
+  <div class="banner-head">
+    <h1 class="title" style="color: white">趣哪的旅遊資訊<small><br>TripNa</small></h1>
+    
+    <h2 class="subtitle"  style="color: white">您要的所有旅遊資訊都在這</h2>
+    <p class="con_font" style="color: white">完善的旅遊規劃，都在趣哪上找到<br>提前的準備<br>為您帶來難忘的回憶</p>
+    <a href="#" class="btn">點此開始製訂行程</a>
+  </div>
+  <div class="banner-body">
+
+    <img class="banner-img banner-img-pad" src="" alt="" width="250px" height="545px">
+    <img class="banner-img  banner-img-mo" src="/景點圖片/美食.jpeg" alt="" width="260px" height="364px">
+    <img class="banner-img banner-img-ph" src="/icon/太魯閣.webp" alt="" width="700px" height="900px">
+    
+
+  </div>
+</div>
+
+</section>
+
+
+ 
+        </div>
+
+       
+       
+
+  
+
+
+
+
+        <!-- -------------------輪播畫面----------------------------- -->
+ <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="/icon/太魯閣.webp" class="d-block w-100" height="800px" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="/icon/彰化肉圓.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+        <!-- 內容資訊部分 -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- <div class="col-lg-8"> -->
+            <!-- <div class="row row-cols-2"> -->
+
+
+              <br><br>
+<!-- ------------------------------天氣資訊內容 ------------------------------------------->
+            <div class="col-12 m-3">
+              <div class="dropdown btn-group">
+                <button type="button" class="btn btn-outline-secondary"  id="loca"></button>
+                <button class="btn btn-outline-secondary secondary  dropdown-toggle dropdown-toggle-split" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><!-- bootstrap設定按鈕顯示的樣式 -->
+                  <span style="display: inline-block; vertical-align: middle;"> 
+                    <span id="site"></span>  <!-- 設定按鈕顯示的文字 --> 
+                    
+                   
+
+                  </span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="location-dropdown">
+                </div>
+              </div>
+              <br>
+
+              <div id="weather-table" class="row row-cols-3">
+
+
+                <table class="table table-bordered table-light table table-striped table-hover table align-middle" style="margin-top: 10px;">
+                  <thead class="th" scope="">
+
+                  </thead>
+
+                  <tbody>
+
+                    <tr id="time" class="table-primary text-center">
+
+                    </tr>
+
+                    <tr id="temp" class="text-center">
+                    </tr>
+                    <tr id="rain" class="text-center">
+                    </tr>
+
+
+                    <tr id="img" class="text-center">
+                    </tr>
+
+                   
+                  </tbody>
+                </table>
+                <div class="readMore " style="width: 200px; border-radius: 20px;padding: 10px; margin-left: 2rem;">
+<a href="https://www.cwa.gov.tw/V8/C/" class="text-center  ">查看更多天氣資訊</a></div>
+              </div>
+             
+
+               <br>
+<hr>
+
+                 <!-- ----------------------------------車況區域--------------------------- -->
+               <!-- ＝＝＝＝＝＝＝＝＝＝＝＝＝booystrap套版開頭＝＝＝＝＝＝＝＝＝＝＝＝＝＝ --> 
+              <div class="container">   
+                
+              <div class="row">
+                <div class="col-4">
+                  
+
+<!-- -----------------------------------車況下拉選單按鈕 ------------------------------>
+
+
+
+                  <!-- <button id="btnroad">即時路況</button> -->
+
+                  <!-- Example split danger button -->
+
+<select name="" id="selectroad">
+  <option value="">基隆端到基隆交流道</option>
+  <option value="">八堵交流道到大華系統交流道</option>
+  <option value="">潮州交流道</option>
+  <option value="">泰山轉接道到林口</option>
+  <option value="">中壢服務區到內壢</option>
+</select>
+
+<div class="btn-group m-2">
+  <!-- <button type="button" class="btn btn-outline-secondary secondary">選擇道路</button> -->
+  <!-- <button type="button" class="btn btn-outline-secondary secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"> -->
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+
+
+  <!-- <ul class="dropdown-menu_1" > -->
+    <!-- <li><a class="dropdown-item_1" href="#">Action</a></li> -->
+    <!-- <li id="traf"><a href="#">國道一號</a> </li>
+    <li><a class="dropdown-item_1" href="#"></a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item_1" href="#">基隆端到基隆交流道</a></li> 
+    <li><a class="dropdown-item_1" href="#">八堵交流道到大華系統交流道</a></li> 
+  </ul> -->
+</div>
+<!-- -----------------------------------車況表單 ------------------------------>
+<div class="card border-success mb-3" style="max-width: 25rem; height: 22rem;">
+  <div class="card-header bg-transparent border-success">國道一號</div>
+  <div class="card-body text-success" style="background-color:#10882493 ;">
+    <h5 class="card-title" style="color: rgb(255, 255, 255);">南向時速：69</h5>
+    <p class="card-text" style="color: rgb(255, 255, 255);">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title" style="color: rgb(255, 255, 255);">北向時速：72</h5>
+    <p class="card-text" style="color: rgb(255, 255, 255);">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="card-footer bg-transparent border-success">基隆端到基隆交流道</div>
+</div>
+              </div>
+
+                <!-- ----------------------------------地震區域--------------------------- -->
+                
+                <div class="col-4">
+                  <div class="Eqk">
+
+                    <!-- <img src="/icon/綠色.png" width="50px" class="img-thumbnail" alt=""> -->
+                 
+                  </div>
+                  <!----------------------------------- 地震資訊按鈕 ------------------------------------->
+            
+                  
+   <button type="button" class="btn btn-outline-secondary"  data-bs-toggle="collapse" data-bs-target="#demo"
+                    id="btnGetOpenData">近期地震資訊</button>
+                    <!-- <img src="/icon/綠色.png" width="50px" class="img-thumbnail" alt=""> -->
+                 
+                 
+             
+          
+    
+                  
+
+                    
+                  <!-- ---------------------------------近期地震資訊內容 ----------------------------------->
+                  <br><br>
+                  <div class="container">
+                    <div class="collapse show" id="collapseExample" style="max-height: 300px; overflow-y: auto; overflow-x: auto">
+                      <div id="demo" class=" bg-light" style="width: auto">
+                  <div id="btn"></div>       
+                      </div>
+                   
+                    </div>   
+                    <!-- ---------------------------------查看更多按鈕 ----------------------------------->
+                 
+                  </div>
+  
+
+                </div>
+ <!-- <div class="col-4">
+
+  <div class="card" style="width: 10rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div> -->
+
+
+ </div>
+
+
+ 
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+ </div>   <!-- =====================資訊欄位bootstrp套版ＥＮＤ============================ -->
+ 
+      <!-------------------------------- 天氣資訊 ------------------------------------------->
+
+
+
+      <div class="col">
+        <div id="weather-table" class="col-7  p-7 w-25 p-3">
+          <table class="table  table-bordered">
+
+
+            <thead scope="col-2">
+              <tr id="location"></tr>
+            </thead>
+
+
+            <tbody scope="col-2">
+              <tr id="temp" class="table-primary">
+              </tr>
+              <tr id="text123">
+              </tr>
+              <tr id="rain">
+              </tr>
+
+              <tr id="status">
+              </tr>
+
+              <tr id="img">
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 地震資料顯示DIV欄位 bootstrap套版摺疊 -->
+ 
+
+
+
+     
+
+
+<!-- --------------------------------------精選主題卡片 --------------------------------->
+
+
+<div class="trip">
+  <h2>景點探索</h2>
+<div class="card-group p-20" >
+  <div class="card">
+    <img src="/景點圖片/101.jpeg" class="card-img-top" alt="..." width="100px" height="300px">
+    <div class="card-body">
+      <h5 class="card-title"> 台北101
+      </h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Read more</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/景點圖片/高雄.jpeg" class="card-img-top" alt="..." width="100px" height="300px">
+    <div class="card-body">
+      <h5 class="card-title">高雄流行音樂中心</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Read more</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/icon/太魯閣.webp" class="card-img-top" alt="..." width="100px" height="300px">
+    <div class="card-body">
+      <h5 class="card-title">太魯閣</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Read more</small></p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝底部按鈕============================================== -->
+<div class="bottom_btn">
+
+<a href="./Infomation.html"> 查看更多地點</a>
+</div>
+
+</div>
+
+
+
+<!-- 美食探索 -->
+<div class="container_1">
+  <div class="row">
+    <div class="col-7 p-0 m-0">
+     
+
+      <div id="carouselExampleCaptions" class="carousel slide w-100 row" data-bs-ride="carousel">
+        <div class="carousel-indicators w-80">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img src="/景點圖片/美食.jpeg" class="d-block w-100" height="620px" style="background-image: linear-gradient(rgba(0, 0, 0, 0.951), rgba(0, 0, 0, 0.914));filter: blur(4px)" alt="...">
+            <div class="carousel-caption d-none d-md-block" >
+              <h2>台中</h2>
+              <h5>米其林自助餐</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/景點圖片/拉麵.jpeg" class="d-block w-100" height="620px" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.951), rgba(0, 0, 0, 0.914));filter: blur(4px)" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>台北</h2>
+              <h5>深夜排隊拉麵</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/景點圖片/火鍋.jpeg" class="d-block w-100" height="620px" style="background-image: linear-gradient(rgba(0, 0, 0, 0.951), rgba(0, 0, 0, 0.914));filter: blur(4px);" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>桃園</h2>
+              <h5>麻辣鍋吃到飽</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+    </div>
+    <div class="col-5">
+    <h1 style="padding-top: 20px; text-align: center;">美食導覽</h1>
+      <div class="card w-80 text-white bg m-2 text-center" style="background-color:#4e5482; width: 35rem;">
+        <div class="card-body">
+          <h5 class="card-title">米其林指南</h5>
+          <p class="card-text">一年一度的米其林指南，被視為城市的美食指標之一。
+
+            臺中擁有許多米其林星級餐廳、必比登推介餐廳以及入選餐廳，歡迎來臺中跟著米其林指南一起探索千變萬化的美食世界。
+            
+            星級餐廳
+            
+            獲得米其林的星等評鑑，對許多餐廳來說是至高的榮耀，一星餐廳代表「優質料理值得順道嘗試」，二星餐廳代表「烹調出色不容錯過」，三星餐廳代表「表現卓越值得專程拜訪」，歡迎前來品嘗臺中星光閃耀的星級餐廳。</p>
+          <a href="#" class="btn btn-outline-light">看更多米其林餐廳</a>
+
+
+
+
+          
+        </div>
+      </div>
+      
+      <div class=" row row-cols-1 row-cols-md-3 g-4 m-2" >
+      <div class="card w-50 text-center" style="background-color:#666c9b2c;height:16rem">
+        <div class="card-body">
+          <h5 class="card-title">必比登推薦</h5>
+          <p class="card-text">必比登推介就是平價的美食指南！入選餐廳必須是台幣1000元可以吃到三種菜色，包含小吃、異國料理、風格多元的必比登推介餐廳，值得你來探索。</p>
+          <a href="#" class="btn btn-outline-secondary">看更多必比登餐廳</a>
+        </div>
+      </div>
+
+      <div class="card m-3 " style="width: 15rem;background-color:#666c9b2c;height: 16rem;">
+        <div class="card-body text-center ">
+          <h5 class="card-title">在地美食</h5>
+          <p class="card-text">來到臺灣，怎麼能錯過在地的特色小吃！
+
+            從傳統市場到各大夜市的人氣美食，或是只有臺灣才吃得到的特色料理，都是一定要品嚐的絕佳滋味。</p>
+          <a href="#" class="btn btn-outline-secondary">查看更多</a>
+        </div>
+
+        </div>
+      </div>
+
+  </div>
+
+<br><br><br><br><br>
+<div class="footer_1">
+<footer>123</footer>
+</div>
+<!-- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝圓形圖片點擊放大＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+
+
+
+
+<!-- <div class="background">
+  <div class="mask" id="mask"></div>
+</div> -->
+
+
+
+<!-- <div class="background polygon"></div> -->
+
+      <!-- https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=CWA-C0D27692-4189-4521-80B1-6805AE7B21F5 -->
+      <!-- https://opendata.cwa.gov.tw/api/v1/rest/datastore/E-A0016-001?Authorization=CWA-C0D27692-4189-4521-80B1-6805AE7B21F5&format=JSON&OriginTime=3068-51-92T40%3A99%3A08 -->
+      <script>
+
+        //載入天氣資料
+
+        // btnWeather.onclick = function (x) {
+        //   $.ajax({
+        //     url: "https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=CWA-C0D27692-4189-4521-80B1-6805AE7B21F5",
+        //     method: "GET"
+
+        //   }).done(function (y) {
+        //     console.log(y.records);
+        //     if (y.records && x.records.Earthquake) {
+        //       console.log(x.records.locations[0].location[0].weatherElement)
+        //       var pika = "";
+
+        //       $.each(x.records.Earthquake, function (index, item) {
+        //         console.log(item.ReportContent)
+        //         if (item.ReportContent) {
+        //           pika += `<p>${item.ReportContent}</p>` + `<p>${item.ReportColor}</p>`;
+
+        //         }
+        //       });
+        //       $("#demo").html(pika);
+        //       $("#demo").append(`<p>您所在的區域:台中</p><br><p>安全</p>`);
+        //     } else {
+        //       console.log("Invalid data structure");
+        //     }
+        //   })
+        // };
+
+// <!-----------------------------字大小調整------------------------------------------------------?
+
+  $("#big").on("click", function () {
+        let x = $("body").css("font-size");      
+      console.log(x)
+        console.log(parseInt(x) + 2 + "px");  
+
+        $("body").css("font-size", parseInt(x) + 4 + "px");
+      });
+
+   $("#sm").on("click", function () {
+        let x = $("body").css("font-size");      
+      console.log(x)
+       
+
+        $("body").css("font-size", parseInt(x) - 4 + "px");
+      });
+
+        // 翻譯>
+
+        // $("#dropdownMenuButton").click(function () {
+
+        // })
+        // // 獲取下拉選單按鈕元素
+        // const dropdownToggle = document.getElementById('dropdownMenuButton1');
+
+        // // 獲取下拉選單元素
+        // const dropdownMenu = document.querySelector('.dropdown-menu_1');
+
+        // // 監聽按鈕點擊事件
+        // dropdownToggle.addEventListener('click', function () {
+        //   // 切換下拉選單的顯示狀態
+        //   dropdownMenu.classList.toggle('show');
+        // });
+
+        // // 監聽整個文件的點擊事件
+        // document.addEventListener('click', function (event) {
+        //   // 如果點擊的目標不是下拉選單或按鈕，則隱藏下拉選單
+        //   if (!event.target.matches('.dropdown-toggle') && !event.target.closest('.dropdown-menu_1')) {
+        //     dropdownMenu.classList.remove('show');
+        //   } else if (true) { $(".dropdown-menu_1").append('<a class="dropdown-lan" href="#">英文</a>') }
+        // });
+
+
+        // 天氣資訊JS
+        let city = [];
+        fetch('https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=CWA-C0D27692-4189-4521-80B1-6805AE7B21F5')
+          .then(response => response.json())
+          .then(data => {
+            generateWeatherTable(data);
+
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+        function generateWeatherTable(data) {
+          console.log(data)
+          const locations = data.records.locations[0].location;
+          console.log(locations)
+          const weatherElement = locations[0].weatherElement;
+          // 地點
+
+          $(document).find(function () {
+            // 在下拉選單中插入地區選項
+            for (var q = 0; q < locations.length; q++) {
+              
+              var city = locations[q].locationName;
+              $('.dropdown-menu').append(`<a class="dropdown-item" href="#">${city}</a>`);
+               
+            }  
+            
+cityinfo('您想前往的區域', 0);
+            // 監聽下拉選單選項的點擊事件
+            $('.dropdown-item').click(function () {
+              var selectedCity = $(this).text();
+              var selectedCityIndex = $(this).index();
+              console.log(selectedCity + selectedCityIndex)
+              cityinfo(selectedCity, selectedCityIndex);
+            });
+
+function cityinfo(selectedCity, selectedCityIndex){              
+              $('#loca').empty();
+              $("#loca").append(`<p class="m-0 p-0">${selectedCity}</p>`)
+              console.log('選擇的地區:', selectedCity);
+              $("#time").empty();
+              $("#time").append('<th>日期</th>');
+              for (var i = 0; i < 14; i = i + 2) {
+                var u = locations[selectedCityIndex].weatherElement[12].time[i].startTime.split('-');
+                var time = u[1] + '/' + u[2]
+                var t = time.substring('0', '5')
+                console.log(t)
+                $("#time").append(`
+            
+<th>${t}</th>`)
+              }
+
+              $("#temp").empty();
+              $("#temp").append('<th>溫度</th>');
+              for (var i = 0; i < 14; i = i + 2) {
+                $('#temp').append(`
+<td>${locations[selectedCityIndex].weatherElement[11].time[i].elementValue[0].value}-${locations[0].weatherElement[12].time[i].elementValue[0].value}°C</td>`)
+              }
+              $("#rain").empty();
+              $("#rain").append('<th>降雨機率</th>');
+              for (var i = 0; i < 14; i = i + 2) {
+                if (locations[selectedCityIndex].weatherElement[0].time[i].elementValue[0].value == ' ') { locations[selectedCityIndex].weatherElement[0].time[i].elementValue[0].value = "0" }
+                $('#rain').append(`
+<td>${locations[selectedCityIndex].weatherElement[0].time[i].elementValue[0].value}%</td>`)
+              }
+
+
+
+              $('#img').empty();
+              $('#img').append('<th>天氣狀態</th>');
+              for (var i = 0; i < 14; i = i + 2) {
+                var y = locations[selectedCityIndex].weatherElement[6].time[i].elementValue[0].value;
+                // console.log(y + i)
+                //           $("#status").append(`
+                // <td>${y}</td>`)
+                $('#img').append(`<td><img width="50px" src="/icon/${y}.svg"></td>`)
+                // ------------------------地震圖示資訊--------------------------------------------------------
+              }
+              $('.Eqk').empty();
+              $('.Eqk').append(`
+ <div class="card" style="width: 25rem;">
+  <div class="card-body" >
+    <h5 class="card-title">${selectedCity}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">震度分級燈號：</h6>
+    <div class="safe"></div>
+    
+    <p class="card-text">未達下列標準之地震</p>
+
+    <a href="#" class="card-link" "text-end"><p class=right>未達下列標準之地震                   </p> <div class="safe_1"></div></a>
+    <p class=right>震度分級標準  </p>
+      <a href="#" class="card-link"><p class=right>芮氏規模5.5以上，最大震度4級以上</p><div class="middle"></div></a>
+      <a href="#" class="card-link"><p class=right>芮氏規模6.0以上，最大震度5弱以上</p><div class="large"></div></a>
+      <a href="#" class="card-link"><p class=right>芮氏規模6.5以上，最大震度6弱以上</p><div class="danger"></div></a>
+    
+   
+
+
+          
+`)
+
+
+}
+
+
+
+
+
+          });
+
+ }
+        
+//  <div class="tips">
+//   <div class="safe_1"></div><p class=right>未達下列標準之地震</p>
+// <div class="middle"></div><p class=right>芮氏規模5.5以上，最大震度4級以上</p>
+// <div class="large"></div><p class=right><p class=right>芮氏規模6.0以上，最大震度5弱以上</p>
+// <div class="danger"></div><p class=right><p class=right>芮氏規模6.5以上，最大震度6弱以上</p></div></div>
+//   </div>
+// </div>
+
+
+//  <div class="left"><h6></h6><h5></h5>
+// // <p></p>
+// // <div class="safe"></div></div>
+// <div class="tips">
+//   <div class="safe_1"></div><p class=right>未達下列標準之地震</p>
+// <div class="middle"></div><p class=right>芮氏規模5.5以上，最大震度4級以上</p>
+// <div class="large"></div><p class=right><p class=right>芮氏規模6.0以上，最大震度5弱以上</p>
+// <div class="danger"></div><p class=right><p class=right>芮氏規模6.5以上，最大震度6弱以上</p></div>
+  // -------------------------------- 按鈕點選時，載入地震資料------------------------------------------
+        
+
+  
+  btnGetOpenData.onclick = function (x) {
+          $.ajax({
+            url: "https://opendata.cwa.gov.tw/api/v1/rest/datastore/E-A0016-001?Authorization=rdec-key-123-45678-011121314",
+            method: "GET"
+
+          }).done(function (x) {
+            // console.log(x);
+            if (x.records && x.records.Earthquake) {
+              console.log(x.records)
+              var str = "";
+var more=""
+              $.each(x.records.Earthquake, function (index, item) {
+                console.log(item.ReportContent)
+                if (item.ReportContent) {
+                  var x=item.ReportContent
+                 var size = x.split('，')
+                 var Max = size[1].substring('4');
+                 var date = 
+                //  console.log(Max)
+
+                  str += `<p class="date">日期：${size[0].substring('0','11')}</p>` +`<p>地點：${size[0].substring('11')}</p>` + `<p>最大震度：${Max}</p>`+`<p>震度分級燈號:</p><div class="safe">${item.ReportColor}</div>
+                  `;
+more = `<button type="button" class="btn btn-outline-secondary p-1" id="readmore"><a href="https://www.cwa.gov.tw/V8/C/E/index.html">查看更多</a></button>`
+                }
+
+                
+              });
+         $("#demo").html(str) + $("#demo").append(more);
+         
+            
+              }
+          
+          })
+        };
+
+
+
+
+
+
+ 
+        // -----------------------------------載入車況資料---------------------------------------
+       
+        fetch('https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Section/Freeway?%24top=30&%24format=JSON')
+          .then(response => response.json())
+          .then(data => {
+            generateTrafficTable(data);
+console.log(data)
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+function generateTrafficTable(data){
+  var road = data.Sections[0].RoadSection
+  console.log(road)
+
+  $(document).find(function(){
+ 
+    // $('#traf').append(`<a lass="dropdown-item_1" href="#" >基隆端到基隆交流道</a>`)
+  })
+}
+
+const mouse = {x:0,y:0};
+document.addEventListener("mousemove",function(e){
+    let scope = document.getElementById('mask');
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    scope.style.left = mouse.x + 'px';
+    scope.style.top = mouse.y + 'px';
+})
+
+scope.style.backgroundPositionX = window.innerWidth/2 - mouse.x - 200 + 'px';    
+scope.style.backgroundPositionY = window.innerHeight/2 - mouse.y + 'px';
+     
+      </script>
+    </div>
+</body>
+
+</html>

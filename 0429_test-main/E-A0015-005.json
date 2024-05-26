@@ -1,0 +1,2782 @@
+{
+ "cwaopendata": {
+  "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
+  "identifier": "CWA-TPIR1130514023415a",
+  "sender": "soc@cwa.gov.tw",
+  "schemaVer": "TW-CWA-XML-EQ:1.0",
+  "language": "zh-TW",
+  "event": "鄉鎮震度",
+  "senderName": "中華民國交通部中央氣象署",
+  "sent": "2024-05-14T10:39:44+08:00",
+  "status": "Actual",
+  "msgType": "Alert",
+  "infoStatus": "Auto",
+  "Earthquake": {
+   "Description": "05/14-10:34臺灣地區發生有感地震，詳情請參考氣象署地震報告。",
+   "OriginTime": "2024-05-14T10:34:15+08:00",
+   "EpicenterLongitude": "121.69",
+   "EpicenterLatitude": "24.03",
+   "FocalDepth": "22.3",
+   "Magnitude": {
+    "MagnitudeType": "芮氏規模",
+    "MagnitudeValue": "4.7"
+   },
+   "Intensity": {
+    "County": [
+     {
+      "CountyName": "臺北市",
+      "CountyCode": "63",
+      "CountyMaxIntensity": "1級",
+      "TownNumber": "12",
+      "Town": [
+       {
+        "TownName": "中山區",
+        "TownCode": "6300400",
+        "StationLongitude": "121.534",
+        "StationLatitude": "25.065",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "中正區",
+        "TownCode": "6300500",
+        "StationLongitude": "121.525",
+        "StationLatitude": "25.045",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "信義區",
+        "TownCode": "6300200",
+        "StationLongitude": "121.567",
+        "StationLatitude": "25.033",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "內湖區",
+        "TownCode": "6301000",
+        "StationLongitude": "121.589",
+        "StationLatitude": "25.070",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "北投區",
+        "TownCode": "6301200",
+        "StationLongitude": "121.503",
+        "StationLatitude": "25.133",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南港區",
+        "TownCode": "6300900",
+        "StationLongitude": "121.607",
+        "StationLatitude": "25.055",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "士林區",
+        "TownCode": "6301100",
+        "StationLongitude": "121.520",
+        "StationLatitude": "25.093",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大同區",
+        "TownCode": "6300600",
+        "StationLongitude": "121.515",
+        "StationLatitude": "25.066",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大安區",
+        "TownCode": "6300300",
+        "StationLongitude": "121.535",
+        "StationLatitude": "25.027",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "文山區",
+        "TownCode": "6300800",
+        "StationLongitude": "121.570",
+        "StationLatitude": "24.990",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "松山區",
+        "TownCode": "6300100",
+        "StationLongitude": "121.577",
+        "StationLatitude": "25.050",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "萬華區",
+        "TownCode": "6300700",
+        "StationLongitude": "121.500",
+        "StationLatitude": "25.035",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "新北市",
+      "CountyCode": "65",
+      "CountyMaxIntensity": "1級",
+      "TownNumber": "29",
+      "Town": [
+       {
+        "TownName": "三峽區",
+        "TownCode": "6500900",
+        "StationLongitude": "121.369",
+        "StationLatitude": "24.935",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "三芝區",
+        "TownCode": "6502100",
+        "StationLongitude": "121.501",
+        "StationLatitude": "25.259",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "三重區",
+        "TownCode": "6500200",
+        "StationLongitude": "121.488",
+        "StationLatitude": "25.062",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "中和區",
+        "TownCode": "6500300",
+        "StationLongitude": "121.501",
+        "StationLatitude": "24.999",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "五股區",
+        "TownCode": "6501500",
+        "StationLongitude": "121.438",
+        "StationLatitude": "25.084",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "八里區",
+        "TownCode": "6502300",
+        "StationLongitude": "121.406",
+        "StationLatitude": "25.155",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "土城區",
+        "TownCode": "6501300",
+        "StationLongitude": "121.443",
+        "StationLatitude": "24.976",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "坪林區",
+        "TownCode": "6502000",
+        "StationLongitude": "121.712",
+        "StationLatitude": "24.937",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "平溪區",
+        "TownCode": "6502400",
+        "StationLongitude": "121.738",
+        "StationLatitude": "25.028",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新店區",
+        "TownCode": "6500600",
+        "StationLongitude": "121.542",
+        "StationLatitude": "24.968",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新莊區",
+        "TownCode": "6500500",
+        "StationLongitude": "121.450",
+        "StationLatitude": "25.037",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "板橋區",
+        "TownCode": "6500100",
+        "StationLongitude": "121.459",
+        "StationLatitude": "25.010",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "林口區",
+        "TownCode": "6501700",
+        "StationLongitude": "121.389",
+        "StationLatitude": "25.078",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "樹林區",
+        "TownCode": "6500700",
+        "StationLongitude": "121.425",
+        "StationLatitude": "24.991",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "永和區",
+        "TownCode": "6500400",
+        "StationLongitude": "121.520",
+        "StationLatitude": "25.010",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "汐止區",
+        "TownCode": "6501100",
+        "StationLongitude": "121.659",
+        "StationLatitude": "25.065",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "泰山區",
+        "TownCode": "6501600",
+        "StationLongitude": "121.431",
+        "StationLatitude": "25.060",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "淡水區",
+        "TownCode": "6501000",
+        "StationLongitude": "121.444",
+        "StationLatitude": "25.189",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "深坑區",
+        "TownCode": "6501800",
+        "StationLongitude": "121.616",
+        "StationLatitude": "25.003",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "烏來區",
+        "TownCode": "6502900",
+        "StationLongitude": "121.548",
+        "StationLatitude": "24.873",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "瑞芳區",
+        "TownCode": "6501200",
+        "StationLongitude": "121.810",
+        "StationLatitude": "25.110",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "石碇區",
+        "TownCode": "6501900",
+        "StationLongitude": "121.658",
+        "StationLatitude": "24.993",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "石門區",
+        "TownCode": "6502200",
+        "StationLongitude": "121.568",
+        "StationLatitude": "25.292",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "萬里區",
+        "TownCode": "6502800",
+        "StationLongitude": "121.689",
+        "StationLatitude": "25.179",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "蘆洲區",
+        "TownCode": "6501400",
+        "StationLongitude": "121.474",
+        "StationLatitude": "25.085",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "貢寮區",
+        "TownCode": "6502600",
+        "StationLongitude": "121.910",
+        "StationLatitude": "25.023",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "金山區",
+        "TownCode": "6502700",
+        "StationLongitude": "121.637",
+        "StationLatitude": "25.223",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "雙溪區",
+        "TownCode": "6502500",
+        "StationLongitude": "121.866",
+        "StationLatitude": "25.035",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "鶯歌區",
+        "TownCode": "6500800",
+        "StationLongitude": "121.354",
+        "StationLatitude": "24.957",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "基隆市",
+      "CountyCode": "10017",
+      "CountyMaxIntensity": "1級",
+      "TownNumber": "7",
+      "Town": [
+       {
+        "TownName": "七堵區",
+        "TownCode": "1001702",
+        "StationLongitude": "121.717",
+        "StationLatitude": "25.098",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "中山區",
+        "TownCode": "1001705",
+        "StationLongitude": "121.729",
+        "StationLatitude": "25.154",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "中正區",
+        "TownCode": "1001701",
+        "StationLongitude": "121.759",
+        "StationLatitude": "25.142",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "仁愛區",
+        "TownCode": "1001704",
+        "StationLongitude": "121.737",
+        "StationLatitude": "25.126",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "信義區",
+        "TownCode": "1001707",
+        "StationLongitude": "121.751",
+        "StationLatitude": "25.130",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "安樂區",
+        "TownCode": "1001706",
+        "StationLongitude": "121.723",
+        "StationLatitude": "25.122",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "暖暖區",
+        "TownCode": "1001703",
+        "StationLongitude": "121.736",
+        "StationLatitude": "25.101",
+        "StationIntensity": "1級"
+       }
+      ]
+     },
+     {
+      "CountyName": "桃園市",
+      "CountyCode": "68",
+      "CountyMaxIntensity": "1級",
+      "TownNumber": "13",
+      "Town": [
+       {
+        "TownName": "中壢區",
+        "TownCode": "6800200",
+        "StationLongitude": "121.225",
+        "StationLatitude": "24.967",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "八德區",
+        "TownCode": "6800800",
+        "StationLongitude": "121.285",
+        "StationLatitude": "24.930",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大園區",
+        "TownCode": "6800600",
+        "StationLongitude": "121.195",
+        "StationLatitude": "25.065",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大溪區",
+        "TownCode": "6800300",
+        "StationLongitude": "121.287",
+        "StationLatitude": "24.881",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "平鎮區",
+        "TownCode": "6801000",
+        "StationLongitude": "121.218",
+        "StationLatitude": "24.947",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "復興區",
+        "TownCode": "6801300",
+        "StationLongitude": "121.351",
+        "StationLatitude": "24.817",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新屋區",
+        "TownCode": "6801100",
+        "StationLongitude": "121.105",
+        "StationLatitude": "24.973",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "桃園區",
+        "TownCode": "6800100",
+        "StationLongitude": "121.302",
+        "StationLatitude": "24.995",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "楊梅區",
+        "TownCode": "6800400",
+        "StationLongitude": "121.144",
+        "StationLatitude": "24.917",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "蘆竹區",
+        "TownCode": "6800500",
+        "StationLongitude": "121.295",
+        "StationLatitude": "25.047",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "觀音區",
+        "TownCode": "6801200",
+        "StationLongitude": "121.083",
+        "StationLatitude": "25.029",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "龍潭區",
+        "TownCode": "6800900",
+        "StationLongitude": "121.222",
+        "StationLatitude": "24.871",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "龜山區",
+        "TownCode": "6800700",
+        "StationLongitude": "121.338",
+        "StationLatitude": "24.993",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "新竹市",
+      "CountyCode": "10018",
+      "CountyMaxIntensity": "1級",
+      "TownNumber": "3",
+      "Town": [
+       {
+        "TownName": "北區",
+        "TownCode": "1001802",
+        "StationLongitude": "120.970",
+        "StationLatitude": "24.817",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "東區",
+        "TownCode": "1001801",
+        "StationLongitude": "120.973",
+        "StationLatitude": "24.806",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "香山區",
+        "TownCode": "1001803",
+        "StationLongitude": "120.942",
+        "StationLatitude": "24.795",
+        "StationIntensity": "1級"
+       }
+      ]
+     },
+     {
+      "CountyName": "新竹縣",
+      "CountyCode": "10004",
+      "CountyMaxIntensity": "2級",
+      "TownNumber": "13",
+      "Town": [
+       {
+        "TownName": "五峰鄉",
+        "TownCode": "1000413",
+        "StationLongitude": "121.119",
+        "StationLatitude": "24.633",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "北埔鄉",
+        "TownCode": "1000409",
+        "StationLongitude": "121.056",
+        "StationLatitude": "24.703",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "寶山鄉",
+        "TownCode": "1000410",
+        "StationLongitude": "120.991",
+        "StationLatitude": "24.766",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "尖石鄉",
+        "TownCode": "1000412",
+        "StationLongitude": "121.201",
+        "StationLatitude": "24.724",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "峨眉鄉",
+        "TownCode": "1000411",
+        "StationLongitude": "121.019",
+        "StationLatitude": "24.695",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "新埔鎮",
+        "TownCode": "1000403",
+        "StationLongitude": "121.074",
+        "StationLatitude": "24.826",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新豐鄉",
+        "TownCode": "1000406",
+        "StationLongitude": "120.985",
+        "StationLatitude": "24.902",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "橫山鄉",
+        "TownCode": "1000408",
+        "StationLongitude": "121.141",
+        "StationLatitude": "24.718",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "湖口鄉",
+        "TownCode": "1000405",
+        "StationLongitude": "121.048",
+        "StationLatitude": "24.902",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "竹北市",
+        "TownCode": "1000401",
+        "StationLongitude": "121.006",
+        "StationLatitude": "24.840",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "竹東鎮",
+        "TownCode": "1000402",
+        "StationLongitude": "121.092",
+        "StationLatitude": "24.738",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "芎林鄉",
+        "TownCode": "1000407",
+        "StationLongitude": "121.082",
+        "StationLatitude": "24.774",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "關西鎮",
+        "TownCode": "1000404",
+        "StationLongitude": "121.176",
+        "StationLatitude": "24.793",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "苗栗縣",
+      "CountyCode": "10005",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "18",
+      "Town": [
+       {
+        "TownName": "三灣鄉",
+        "TownCode": "1000516",
+        "StationLongitude": "120.957",
+        "StationLatitude": "24.654",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "三義鄉",
+        "TownCode": "1000513",
+        "StationLongitude": "120.770",
+        "StationLatitude": "24.414",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "公館鄉",
+        "TownCode": "1000509",
+        "StationLongitude": "120.828",
+        "StationLatitude": "24.507",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "卓蘭鎮",
+        "TownCode": "1000507",
+        "StationLongitude": "120.824",
+        "StationLatitude": "24.314",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南庄鄉",
+        "TownCode": "1000511",
+        "StationLongitude": "121.000",
+        "StationLatitude": "24.598",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大湖鄉",
+        "TownCode": "1000508",
+        "StationLongitude": "120.866",
+        "StationLatitude": "24.424",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "後龍鎮",
+        "TownCode": "1000506",
+        "StationLongitude": "120.792",
+        "StationLatitude": "24.615",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "泰安鄉",
+        "TownCode": "1000518",
+        "StationLongitude": "120.908",
+        "StationLatitude": "24.448",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "獅潭鄉",
+        "TownCode": "1000517",
+        "StationLongitude": "120.920",
+        "StationLatitude": "24.540",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "竹南鎮",
+        "TownCode": "1000504",
+        "StationLongitude": "120.873",
+        "StationLatitude": "24.685",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "苑裡鎮",
+        "TownCode": "1000502",
+        "StationLongitude": "120.652",
+        "StationLatitude": "24.442",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "苗栗市",
+        "TownCode": "1000501",
+        "StationLongitude": "120.819",
+        "StationLatitude": "24.563",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "西湖鄉",
+        "TownCode": "1000514",
+        "StationLongitude": "120.757",
+        "StationLatitude": "24.557",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "通霄鎮",
+        "TownCode": "1000503",
+        "StationLongitude": "120.684",
+        "StationLatitude": "24.492",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "造橋鄉",
+        "TownCode": "1000515",
+        "StationLongitude": "120.865",
+        "StationLatitude": "24.639",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "銅鑼鄉",
+        "TownCode": "1000510",
+        "StationLongitude": "120.794",
+        "StationLatitude": "24.484",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "頭份市",
+        "TownCode": "1000505",
+        "StationLongitude": "120.913",
+        "StationLatitude": "24.687",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "頭屋鄉",
+        "TownCode": "1000512",
+        "StationLongitude": "120.851",
+        "StationLatitude": "24.582",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "臺中市",
+      "CountyCode": "66",
+      "CountyMaxIntensity": "1級",
+      "TownNumber": "29",
+      "Town": [
+       {
+        "TownName": "中區",
+        "TownCode": "6600100",
+        "StationLongitude": "120.680",
+        "StationLatitude": "24.145",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "北區",
+        "TownCode": "6600500",
+        "StationLongitude": "120.682",
+        "StationLatitude": "24.167",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "北屯區",
+        "TownCode": "6600800",
+        "StationLongitude": "120.686",
+        "StationLatitude": "24.183",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南區",
+        "TownCode": "6600300",
+        "StationLongitude": "120.663",
+        "StationLatitude": "24.123",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南屯區",
+        "TownCode": "6600700",
+        "StationLongitude": "120.644",
+        "StationLatitude": "24.135",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "后里區",
+        "TownCode": "6601500",
+        "StationLongitude": "120.711",
+        "StationLatitude": "24.306",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "和平區",
+        "TownCode": "6602900",
+        "StationLongitude": "120.884",
+        "StationLatitude": "24.176",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "外埔區",
+        "TownCode": "6602100",
+        "StationLongitude": "120.654",
+        "StationLatitude": "24.333",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大安區",
+        "TownCode": "6602200",
+        "StationLongitude": "120.587",
+        "StationLatitude": "24.347",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大甲區",
+        "TownCode": "6601100",
+        "StationLongitude": "120.622",
+        "StationLatitude": "24.350",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大肚區",
+        "TownCode": "6602400",
+        "StationLongitude": "120.546",
+        "StationLatitude": "24.152",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大里區",
+        "TownCode": "6602800",
+        "StationLongitude": "120.686",
+        "StationLatitude": "24.101",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大雅區",
+        "TownCode": "6601800",
+        "StationLongitude": "120.648",
+        "StationLatitude": "24.230",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "太平區",
+        "TownCode": "6602700",
+        "StationLongitude": "120.718",
+        "StationLatitude": "24.127",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新社區",
+        "TownCode": "6601900",
+        "StationLongitude": "120.809",
+        "StationLatitude": "24.235",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東勢區",
+        "TownCode": "6601000",
+        "StationLongitude": "120.828",
+        "StationLatitude": "24.259",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東區",
+        "TownCode": "6600200",
+        "StationLongitude": "120.704",
+        "StationLatitude": "24.138",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "梧棲區",
+        "TownCode": "6601400",
+        "StationLongitude": "120.532",
+        "StationLatitude": "24.256",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "沙鹿區",
+        "TownCode": "6601300",
+        "StationLongitude": "120.566",
+        "StationLatitude": "24.235",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "清水區",
+        "TownCode": "6601200",
+        "StationLongitude": "120.560",
+        "StationLatitude": "24.269",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "潭子區",
+        "TownCode": "6601700",
+        "StationLongitude": "120.723",
+        "StationLatitude": "24.204",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "烏日區",
+        "TownCode": "6602300",
+        "StationLongitude": "120.624",
+        "StationLatitude": "24.106",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "石岡區",
+        "TownCode": "6602000",
+        "StationLongitude": "120.780",
+        "StationLatitude": "24.276",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "神岡區",
+        "TownCode": "6601600",
+        "StationLongitude": "120.661",
+        "StationLatitude": "24.259",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "西區",
+        "TownCode": "6600400",
+        "StationLongitude": "120.671",
+        "StationLatitude": "24.142",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "西屯區",
+        "TownCode": "6600600",
+        "StationLongitude": "120.634",
+        "StationLatitude": "24.167",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "豐原區",
+        "TownCode": "6600900",
+        "StationLongitude": "120.718",
+        "StationLatitude": "24.243",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "霧峰區",
+        "TownCode": "6602600",
+        "StationLongitude": "120.700",
+        "StationLatitude": "24.063",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "龍井區",
+        "TownCode": "6602500",
+        "StationLongitude": "120.545",
+        "StationLatitude": "24.194",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "南投縣",
+      "CountyCode": "10008",
+      "CountyMaxIntensity": "1級",
+      "TownNumber": "13",
+      "Town": [
+       {
+        "TownName": "中寮鄉",
+        "TownCode": "1000808",
+        "StationLongitude": "120.766",
+        "StationLatitude": "23.880",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "仁愛鄉",
+        "TownCode": "1000813",
+        "StationLongitude": "121.132",
+        "StationLatitude": "24.022",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "信義鄉",
+        "TownCode": "1000812",
+        "StationLongitude": "120.854",
+        "StationLatitude": "23.698",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南投市",
+        "TownCode": "1000801",
+        "StationLongitude": "120.687",
+        "StationLatitude": "23.912",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "名間鄉",
+        "TownCode": "1000806",
+        "StationLongitude": "120.703",
+        "StationLatitude": "23.839",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "國姓鄉",
+        "TownCode": "1000810",
+        "StationLongitude": "120.858",
+        "StationLatitude": "24.041",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "埔里鎮",
+        "TownCode": "1000802",
+        "StationLongitude": "120.969",
+        "StationLatitude": "23.967",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "水里鄉",
+        "TownCode": "1000811",
+        "StationLongitude": "120.856",
+        "StationLatitude": "23.812",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "竹山鎮",
+        "TownCode": "1000804",
+        "StationLongitude": "120.672",
+        "StationLatitude": "23.759",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "草屯鎮",
+        "TownCode": "1000803",
+        "StationLongitude": "120.680",
+        "StationLatitude": "23.975",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "集集鎮",
+        "TownCode": "1000805",
+        "StationLongitude": "120.787",
+        "StationLatitude": "23.829",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "魚池鄉",
+        "TownCode": "1000809",
+        "StationLongitude": "120.935",
+        "StationLatitude": "23.897",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鹿谷鄉",
+        "TownCode": "1000807",
+        "StationLongitude": "120.753",
+        "StationLatitude": "23.747",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "彰化縣",
+      "CountyCode": "10007",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "26",
+      "Town": [
+       {
+        "TownName": "二林鎮",
+        "TownCode": "1000720",
+        "StationLongitude": "120.374",
+        "StationLatitude": "23.901",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "二水鄉",
+        "TownCode": "1000718",
+        "StationLongitude": "120.619",
+        "StationLatitude": "23.808",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "伸港鄉",
+        "TownCode": "1000705",
+        "StationLongitude": "120.486",
+        "StationLatitude": "24.160",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "北斗鎮",
+        "TownCode": "1000719",
+        "StationLongitude": "120.522",
+        "StationLatitude": "23.872",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "和美鎮",
+        "TownCode": "1000703",
+        "StationLongitude": "120.494",
+        "StationLatitude": "24.111",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "員林市",
+        "TownCode": "1000710",
+        "StationLongitude": "120.574",
+        "StationLatitude": "23.960",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "埔心鄉",
+        "TownCode": "1000715",
+        "StationLongitude": "120.543",
+        "StationLatitude": "23.954",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "埔鹽鄉",
+        "TownCode": "1000714",
+        "StationLongitude": "120.464",
+        "StationLatitude": "24.001",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "埤頭鄉",
+        "TownCode": "1000722",
+        "StationLongitude": "120.462",
+        "StationLatitude": "23.892",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大城鄉",
+        "TownCode": "1000724",
+        "StationLongitude": "120.321",
+        "StationLatitude": "23.853",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大村鄉",
+        "TownCode": "1000713",
+        "StationLongitude": "120.548",
+        "StationLatitude": "23.994",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "彰化市",
+        "TownCode": "1000701",
+        "StationLongitude": "120.542",
+        "StationLatitude": "24.082",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "永靖鄉",
+        "TownCode": "1000716",
+        "StationLongitude": "120.548",
+        "StationLatitude": "23.925",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "溪州鄉",
+        "TownCode": "1000726",
+        "StationLongitude": "120.499",
+        "StationLatitude": "23.853",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "溪湖鎮",
+        "TownCode": "1000711",
+        "StationLongitude": "120.484",
+        "StationLatitude": "23.967",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "田中鎮",
+        "TownCode": "1000712",
+        "StationLongitude": "120.581",
+        "StationLatitude": "23.862",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "田尾鄉",
+        "TownCode": "1000721",
+        "StationLongitude": "120.526",
+        "StationLatitude": "23.893",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "社頭鄉",
+        "TownCode": "1000717",
+        "StationLongitude": "120.586",
+        "StationLatitude": "23.898",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "福興鄉",
+        "TownCode": "1000706",
+        "StationLongitude": "120.444",
+        "StationLatitude": "24.049",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "秀水鄉",
+        "TownCode": "1000707",
+        "StationLongitude": "120.503",
+        "StationLatitude": "24.036",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "竹塘鄉",
+        "TownCode": "1000725",
+        "StationLongitude": "120.428",
+        "StationLatitude": "23.861",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "線西鄉",
+        "TownCode": "1000704",
+        "StationLongitude": "120.471",
+        "StationLatitude": "24.132",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "芬園鄉",
+        "TownCode": "1000709",
+        "StationLongitude": "120.629",
+        "StationLatitude": "24.015",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "花壇鄉",
+        "TownCode": "1000708",
+        "StationLongitude": "120.538",
+        "StationLatitude": "24.030",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "芳苑鄉",
+        "TownCode": "1000723",
+        "StationLongitude": "120.320",
+        "StationLatitude": "23.925",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鹿港鎮",
+        "TownCode": "1000702",
+        "StationLongitude": "120.435",
+        "StationLatitude": "24.058",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "雲林縣",
+      "CountyCode": "10009",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "20",
+      "Town": [
+       {
+        "TownName": "二崙鄉",
+        "TownCode": "1000911",
+        "StationLongitude": "120.413",
+        "StationLatitude": "23.772",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "元長鄉",
+        "TownCode": "1000917",
+        "StationLongitude": "120.315",
+        "StationLatitude": "23.650",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "北港鎮",
+        "TownCode": "1000906",
+        "StationLongitude": "120.302",
+        "StationLatitude": "23.577",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "口湖鄉",
+        "TownCode": "1000919",
+        "StationLongitude": "120.186",
+        "StationLatitude": "23.583",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "古坑鄉",
+        "TownCode": "1000907",
+        "StationLongitude": "120.562",
+        "StationLatitude": "23.643",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "四湖鄉",
+        "TownCode": "1000918",
+        "StationLongitude": "120.224",
+        "StationLatitude": "23.639",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "土庫鎮",
+        "TownCode": "1000905",
+        "StationLongitude": "120.390",
+        "StationLatitude": "23.683",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大埤鄉",
+        "TownCode": "1000908",
+        "StationLongitude": "120.432",
+        "StationLatitude": "23.647",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "崙背鄉",
+        "TownCode": "1000912",
+        "StationLongitude": "120.359",
+        "StationLatitude": "23.763",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "斗六市",
+        "TownCode": "1000901",
+        "StationLongitude": "120.527",
+        "StationLatitude": "23.698",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "斗南鎮",
+        "TownCode": "1000902",
+        "StationLongitude": "120.478",
+        "StationLatitude": "23.681",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東勢鄉",
+        "TownCode": "1000914",
+        "StationLongitude": "120.252",
+        "StationLatitude": "23.676",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "林內鄉",
+        "TownCode": "1000910",
+        "StationLongitude": "120.613",
+        "StationLatitude": "23.757",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "水林鄉",
+        "TownCode": "1000920",
+        "StationLongitude": "120.246",
+        "StationLatitude": "23.573",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "臺西鄉",
+        "TownCode": "1000916",
+        "StationLongitude": "120.196",
+        "StationLatitude": "23.701",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "莿桐鄉",
+        "TownCode": "1000909",
+        "StationLongitude": "120.502",
+        "StationLatitude": "23.762",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "虎尾鎮",
+        "TownCode": "1000903",
+        "StationLongitude": "120.445",
+        "StationLatitude": "23.709",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "褒忠鄉",
+        "TownCode": "1000915",
+        "StationLongitude": "120.304",
+        "StationLatitude": "23.693",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "西螺鎮",
+        "TownCode": "1000904",
+        "StationLongitude": "120.466",
+        "StationLatitude": "23.799",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "麥寮鄉",
+        "TownCode": "1000913",
+        "StationLongitude": "120.252",
+        "StationLatitude": "23.760",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "嘉義市",
+      "CountyCode": "10020",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "2",
+      "Town": [
+       {
+        "TownName": "東區",
+        "TownCode": "1002001",
+        "StationLongitude": "120.453",
+        "StationLatitude": "23.480",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "西區",
+        "TownCode": "1002002",
+        "StationLongitude": "120.436",
+        "StationLatitude": "23.465",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "嘉義縣",
+      "CountyCode": "10010",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "18",
+      "Town": [
+       {
+        "TownName": "中埔鄉",
+        "TownCode": "1001013",
+        "StationLongitude": "120.523",
+        "StationLatitude": "23.426",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "六腳鄉",
+        "TownCode": "1001008",
+        "StationLongitude": "120.291",
+        "StationLatitude": "23.495",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大埔鄉",
+        "TownCode": "1001017",
+        "StationLongitude": "120.594",
+        "StationLatitude": "23.296",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大林鎮",
+        "TownCode": "1001004",
+        "StationLongitude": "120.471",
+        "StationLatitude": "23.606",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "太保市",
+        "TownCode": "1001001",
+        "StationLongitude": "120.332",
+        "StationLatitude": "23.462",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "布袋鎮",
+        "TownCode": "1001003",
+        "StationLongitude": "120.167",
+        "StationLatitude": "23.379",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新港鄉",
+        "TownCode": "1001007",
+        "StationLongitude": "120.348",
+        "StationLatitude": "23.553",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "朴子市",
+        "TownCode": "1001002",
+        "StationLongitude": "120.246",
+        "StationLatitude": "23.458",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東石鄉",
+        "TownCode": "1001009",
+        "StationLongitude": "120.153",
+        "StationLatitude": "23.461",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "梅山鄉",
+        "TownCode": "1001015",
+        "StationLongitude": "120.555",
+        "StationLatitude": "23.586",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "民雄鄉",
+        "TownCode": "1001005",
+        "StationLongitude": "120.428",
+        "StationLatitude": "23.552",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "水上鄉",
+        "TownCode": "1001012",
+        "StationLongitude": "120.398",
+        "StationLatitude": "23.429",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "溪口鄉",
+        "TownCode": "1001006",
+        "StationLongitude": "120.392",
+        "StationLatitude": "23.603",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "番路鄉",
+        "TownCode": "1001016",
+        "StationLongitude": "120.554",
+        "StationLatitude": "23.465",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "竹崎鄉",
+        "TownCode": "1001014",
+        "StationLongitude": "120.551",
+        "StationLatitude": "23.524",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "義竹鄉",
+        "TownCode": "1001010",
+        "StationLongitude": "120.243",
+        "StationLatitude": "23.337",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "阿里山鄉",
+        "TownCode": "1001018",
+        "StationLongitude": "120.713",
+        "StationLatitude": "23.472",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鹿草鄉",
+        "TownCode": "1001011",
+        "StationLongitude": "120.308",
+        "StationLatitude": "23.413",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "臺南市",
+      "CountyCode": "67",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "37",
+      "Town": [
+       {
+        "TownName": "七股區",
+        "TownCode": "6701500",
+        "StationLongitude": "120.139",
+        "StationLatitude": "23.141",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "下營區",
+        "TownCode": "6700800",
+        "StationLongitude": "120.264",
+        "StationLatitude": "23.236",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "中西區",
+        "TownCode": "6703700",
+        "StationLongitude": "120.206",
+        "StationLatitude": "22.993",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "仁德區",
+        "TownCode": "6702700",
+        "StationLongitude": "120.252",
+        "StationLatitude": "22.973",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "佳里區",
+        "TownCode": "6701200",
+        "StationLongitude": "120.177",
+        "StationLatitude": "23.166",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "六甲區",
+        "TownCode": "6700900",
+        "StationLongitude": "120.348",
+        "StationLatitude": "23.233",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "北區",
+        "TownCode": "6703400",
+        "StationLongitude": "120.203",
+        "StationLatitude": "23.000",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "北門區",
+        "TownCode": "6701700",
+        "StationLongitude": "120.125",
+        "StationLatitude": "23.269",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南化區",
+        "TownCode": "6702500",
+        "StationLongitude": "120.478",
+        "StationLatitude": "23.044",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南區",
+        "TownCode": "6703300",
+        "StationLongitude": "120.189",
+        "StationLatitude": "22.962",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "善化區",
+        "TownCode": "6701900",
+        "StationLongitude": "120.297",
+        "StationLatitude": "23.133",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大內區",
+        "TownCode": "6701100",
+        "StationLongitude": "120.357",
+        "StationLatitude": "23.120",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "學甲區",
+        "TownCode": "6701300",
+        "StationLongitude": "120.182",
+        "StationLatitude": "23.231",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "安南區",
+        "TownCode": "6703500",
+        "StationLongitude": "120.185",
+        "StationLatitude": "23.048",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "安定區",
+        "TownCode": "6702100",
+        "StationLongitude": "120.237",
+        "StationLatitude": "23.122",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "安平區",
+        "TownCode": "6703600",
+        "StationLongitude": "120.169",
+        "StationLatitude": "22.995",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "官田區",
+        "TownCode": "6701000",
+        "StationLongitude": "120.315",
+        "StationLatitude": "23.194",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "將軍區",
+        "TownCode": "6701600",
+        "StationLongitude": "120.159",
+        "StationLatitude": "23.200",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "山上區",
+        "TownCode": "6702200",
+        "StationLongitude": "120.353",
+        "StationLatitude": "23.105",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "左鎮區",
+        "TownCode": "6702600",
+        "StationLongitude": "120.409",
+        "StationLatitude": "23.057",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "後壁區",
+        "TownCode": "6700500",
+        "StationLongitude": "120.362",
+        "StationLatitude": "23.367",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新化區",
+        "TownCode": "6701800",
+        "StationLongitude": "120.311",
+        "StationLatitude": "23.039",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新市區",
+        "TownCode": "6702000",
+        "StationLongitude": "120.295",
+        "StationLatitude": "23.080",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新營區",
+        "TownCode": "6700100",
+        "StationLongitude": "120.317",
+        "StationLatitude": "23.311",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東區",
+        "TownCode": "6703200",
+        "StationLongitude": "120.224",
+        "StationLatitude": "22.981",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東山區",
+        "TownCode": "6700600",
+        "StationLongitude": "120.405",
+        "StationLatitude": "23.327",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "柳營區",
+        "TownCode": "6700400",
+        "StationLongitude": "120.312",
+        "StationLatitude": "23.279",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "楠西區",
+        "TownCode": "6702400",
+        "StationLongitude": "120.486",
+        "StationLatitude": "23.175",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "歸仁區",
+        "TownCode": "6702800",
+        "StationLongitude": "120.294",
+        "StationLatitude": "22.968",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "永康區",
+        "TownCode": "6703100",
+        "StationLongitude": "120.257",
+        "StationLatitude": "23.027",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "玉井區",
+        "TownCode": "6702300",
+        "StationLongitude": "120.460",
+        "StationLatitude": "23.125",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "白河區",
+        "TownCode": "6700300",
+        "StationLongitude": "120.415",
+        "StationLatitude": "23.352",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "西港區",
+        "TownCode": "6701400",
+        "StationLongitude": "120.203",
+        "StationLatitude": "23.124",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "關廟區",
+        "TownCode": "6702900",
+        "StationLongitude": "120.328",
+        "StationLatitude": "22.963",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鹽水區",
+        "TownCode": "6700200",
+        "StationLongitude": "120.266",
+        "StationLatitude": "23.321",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "麻豆區",
+        "TownCode": "6700700",
+        "StationLongitude": "120.258",
+        "StationLatitude": "23.186",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "龍崎區",
+        "TownCode": "6703000",
+        "StationLongitude": "120.365",
+        "StationLatitude": "22.964",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "高雄市",
+      "CountyCode": "64",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "38",
+      "Town": [
+       {
+        "TownName": "三民區",
+        "TownCode": "6400500",
+        "StationLongitude": "120.300",
+        "StationLatitude": "22.648",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "仁武區",
+        "TownCode": "6401700",
+        "StationLongitude": "120.348",
+        "StationLatitude": "22.702",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "內門區",
+        "TownCode": "6403500",
+        "StationLongitude": "120.463",
+        "StationLatitude": "22.943",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "六龜區",
+        "TownCode": "6403200",
+        "StationLongitude": "120.633",
+        "StationLatitude": "22.999",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "前金區",
+        "TownCode": "6400700",
+        "StationLongitude": "120.294",
+        "StationLatitude": "22.628",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "前鎮區",
+        "TownCode": "6400900",
+        "StationLongitude": "120.318",
+        "StationLatitude": "22.587",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大寮區",
+        "TownCode": "6401400",
+        "StationLongitude": "120.396",
+        "StationLatitude": "22.606",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大樹區",
+        "TownCode": "6401500",
+        "StationLongitude": "120.414",
+        "StationLatitude": "22.684",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大社區",
+        "TownCode": "6401600",
+        "StationLongitude": "120.347",
+        "StationLatitude": "22.730",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "小港區",
+        "TownCode": "6401100",
+        "StationLongitude": "120.338",
+        "StationLatitude": "22.566",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "岡山區",
+        "TownCode": "6401900",
+        "StationLongitude": "120.295",
+        "StationLatitude": "22.798",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "左營區",
+        "TownCode": "6400300",
+        "StationLongitude": "120.295",
+        "StationLatitude": "22.690",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "彌陀區",
+        "TownCode": "6402800",
+        "StationLongitude": "120.251",
+        "StationLatitude": "22.782",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新興區",
+        "TownCode": "6400600",
+        "StationLongitude": "120.310",
+        "StationLatitude": "22.631",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "旗山區",
+        "TownCode": "6403000",
+        "StationLongitude": "120.484",
+        "StationLatitude": "22.889",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "旗津區",
+        "TownCode": "6401000",
+        "StationLongitude": "120.284",
+        "StationLatitude": "22.591",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "杉林區",
+        "TownCode": "6403400",
+        "StationLongitude": "120.540",
+        "StationLatitude": "22.972",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "林園區",
+        "TownCode": "6401300",
+        "StationLongitude": "120.394",
+        "StationLatitude": "22.513",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "桃源區",
+        "TownCode": "6403700",
+        "StationLongitude": "120.764",
+        "StationLatitude": "23.160",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "梓官區",
+        "TownCode": "6402900",
+        "StationLongitude": "120.267",
+        "StationLatitude": "22.761",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "楠梓區",
+        "TownCode": "6400400",
+        "StationLongitude": "120.326",
+        "StationLatitude": "22.729",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "橋頭區",
+        "TownCode": "6402000",
+        "StationLongitude": "120.305",
+        "StationLatitude": "22.758",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "永安區",
+        "TownCode": "6402700",
+        "StationLongitude": "120.224",
+        "StationLatitude": "22.818",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "湖內區",
+        "TownCode": "6402500",
+        "StationLongitude": "120.212",
+        "StationLatitude": "22.909",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "燕巢區",
+        "TownCode": "6402100",
+        "StationLongitude": "120.362",
+        "StationLatitude": "22.789",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "田寮區",
+        "TownCode": "6402200",
+        "StationLongitude": "120.359",
+        "StationLatitude": "22.870",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "甲仙區",
+        "TownCode": "6403300",
+        "StationLongitude": "120.588",
+        "StationLatitude": "23.084",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "美濃區",
+        "TownCode": "6403100",
+        "StationLongitude": "120.542",
+        "StationLatitude": "22.895",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "苓雅區",
+        "TownCode": "6400800",
+        "StationLongitude": "120.312",
+        "StationLatitude": "22.622",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "茂林區",
+        "TownCode": "6403600",
+        "StationLongitude": "120.663",
+        "StationLatitude": "22.886",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "茄萣區",
+        "TownCode": "6402600",
+        "StationLongitude": "120.182",
+        "StationLatitude": "22.907",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "路竹區",
+        "TownCode": "6402400",
+        "StationLongitude": "120.259",
+        "StationLatitude": "22.855",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "那瑪夏區",
+        "TownCode": "6403800",
+        "StationLongitude": "120.720",
+        "StationLatitude": "23.278",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "阿蓮區",
+        "TownCode": "6402300",
+        "StationLongitude": "120.327",
+        "StationLatitude": "22.884",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鳥松區",
+        "TownCode": "6401800",
+        "StationLongitude": "120.364",
+        "StationLatitude": "22.660",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鳳山區",
+        "TownCode": "6401200",
+        "StationLongitude": "120.363",
+        "StationLatitude": "22.627",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鹽埕區",
+        "TownCode": "6400100",
+        "StationLongitude": "120.287",
+        "StationLatitude": "22.625",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鼓山區",
+        "TownCode": "6400200",
+        "StationLongitude": "120.281",
+        "StationLatitude": "22.637",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "屏東縣",
+      "CountyCode": "10013",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "33",
+      "Town": [
+       {
+        "TownName": "三地門鄉",
+        "TownCode": "1001326",
+        "StationLongitude": "120.654",
+        "StationLatitude": "22.717",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "九如鄉",
+        "TownCode": "1001308",
+        "StationLongitude": "120.490",
+        "StationLatitude": "22.741",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "佳冬鄉",
+        "TownCode": "1001321",
+        "StationLongitude": "120.552",
+        "StationLatitude": "22.419",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "來義鄉",
+        "TownCode": "1001330",
+        "StationLongitude": "120.632",
+        "StationLatitude": "22.526",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "內埔鄉",
+        "TownCode": "1001313",
+        "StationLongitude": "120.567",
+        "StationLatitude": "22.612",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南州鄉",
+        "TownCode": "1001320",
+        "StationLongitude": "120.510",
+        "StationLatitude": "22.491",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "屏東市",
+        "TownCode": "1001301",
+        "StationLongitude": "120.491",
+        "StationLatitude": "22.663",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "崁頂鄉",
+        "TownCode": "1001318",
+        "StationLongitude": "120.514",
+        "StationLatitude": "22.515",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "恆春鎮",
+        "TownCode": "1001304",
+        "StationLongitude": "120.747",
+        "StationLatitude": "22.004",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新園鄉",
+        "TownCode": "1001317",
+        "StationLongitude": "120.461",
+        "StationLatitude": "22.544",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新埤鄉",
+        "TownCode": "1001315",
+        "StationLongitude": "120.550",
+        "StationLatitude": "22.471",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "春日鄉",
+        "TownCode": "1001331",
+        "StationLongitude": "120.629",
+        "StationLatitude": "22.372",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東港鎮",
+        "TownCode": "1001303",
+        "StationLongitude": "120.454",
+        "StationLatitude": "22.467",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "枋寮鄉",
+        "TownCode": "1001316",
+        "StationLongitude": "120.593",
+        "StationLatitude": "22.366",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "枋山鄉",
+        "TownCode": "1001325",
+        "StationLongitude": "120.652",
+        "StationLatitude": "22.264",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "林邊鄉",
+        "TownCode": "1001319",
+        "StationLongitude": "120.510",
+        "StationLatitude": "22.432",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "泰武鄉",
+        "TownCode": "1001329",
+        "StationLongitude": "120.632",
+        "StationLatitude": "22.592",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "滿州鄉",
+        "TownCode": "1001324",
+        "StationLongitude": "120.839",
+        "StationLatitude": "22.021",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "潮州鎮",
+        "TownCode": "1001302",
+        "StationLongitude": "120.543",
+        "StationLatitude": "22.550",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "牡丹鄉",
+        "TownCode": "1001333",
+        "StationLongitude": "120.774",
+        "StationLatitude": "22.126",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "獅子鄉",
+        "TownCode": "1001332",
+        "StationLongitude": "120.705",
+        "StationLatitude": "22.202",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "琉球鄉",
+        "TownCode": "1001322",
+        "StationLongitude": "120.383",
+        "StationLatitude": "22.349",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "瑪家鄉",
+        "TownCode": "1001328",
+        "StationLongitude": "120.649",
+        "StationLatitude": "22.709",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "竹田鄉",
+        "TownCode": "1001314",
+        "StationLongitude": "120.544",
+        "StationLatitude": "22.585",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "萬丹鄉",
+        "TownCode": "1001305",
+        "StationLongitude": "120.485",
+        "StationLatitude": "22.590",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "萬巒鄉",
+        "TownCode": "1001312",
+        "StationLongitude": "120.568",
+        "StationLatitude": "22.573",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "車城鄉",
+        "TownCode": "1001323",
+        "StationLongitude": "120.714",
+        "StationLatitude": "22.074",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "里港鄉",
+        "TownCode": "1001309",
+        "StationLongitude": "120.494",
+        "StationLatitude": "22.780",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "長治鄉",
+        "TownCode": "1001306",
+        "StationLongitude": "120.527",
+        "StationLatitude": "22.677",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "霧臺鄉",
+        "TownCode": "1001327",
+        "StationLongitude": "120.728",
+        "StationLatitude": "22.749",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "高樹鄉",
+        "TownCode": "1001311",
+        "StationLongitude": "120.600",
+        "StationLatitude": "22.827",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鹽埔鄉",
+        "TownCode": "1001310",
+        "StationLongitude": "120.573",
+        "StationLatitude": "22.755",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "麟洛鄉",
+        "TownCode": "1001307",
+        "StationLongitude": "120.527",
+        "StationLatitude": "22.651",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "宜蘭縣",
+      "CountyCode": "10002",
+      "CountyMaxIntensity": "2級",
+      "TownNumber": "12",
+      "Town": [
+       {
+        "TownName": "三星鄉",
+        "TownCode": "1000210",
+        "StationLongitude": "121.654",
+        "StationLatitude": "24.666",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "五結鄉",
+        "TownCode": "1000209",
+        "StationLongitude": "121.798",
+        "StationLatitude": "24.685",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "冬山鄉",
+        "TownCode": "1000208",
+        "StationLongitude": "121.793",
+        "StationLatitude": "24.635",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "南澳鄉",
+        "TownCode": "1000212",
+        "StationLongitude": "121.804",
+        "StationLatitude": "24.466",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "員山鄉",
+        "TownCode": "1000207",
+        "StationLongitude": "121.723",
+        "StationLatitude": "24.744",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "壯圍鄉",
+        "TownCode": "1000206",
+        "StationLongitude": "121.786",
+        "StationLatitude": "24.747",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "大同鄉",
+        "TownCode": "1000211",
+        "StationLongitude": "121.609",
+        "StationLatitude": "24.678",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "宜蘭市",
+        "TownCode": "1000201",
+        "StationLongitude": "121.753",
+        "StationLatitude": "24.752",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "礁溪鄉",
+        "TownCode": "1000205",
+        "StationLongitude": "121.771",
+        "StationLatitude": "24.824",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "羅東鎮",
+        "TownCode": "1000202",
+        "StationLongitude": "121.767",
+        "StationLatitude": "24.677",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "蘇澳鎮",
+        "TownCode": "1000203",
+        "StationLongitude": "121.842",
+        "StationLatitude": "24.595",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "頭城鎮",
+        "TownCode": "1000204",
+        "StationLongitude": "121.821",
+        "StationLatitude": "24.855",
+        "StationIntensity": "1級"
+       }
+      ]
+     },
+     {
+      "CountyName": "花蓮縣",
+      "CountyCode": "10015",
+      "CountyMaxIntensity": "3級",
+      "TownNumber": "13",
+      "Town": [
+       {
+        "TownName": "光復鄉",
+        "TownCode": "1001507",
+        "StationLongitude": "121.423",
+        "StationLatitude": "23.670",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "卓溪鄉",
+        "TownCode": "1001513",
+        "StationLongitude": "121.303",
+        "StationLatitude": "23.346",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "吉安鄉",
+        "TownCode": "1001505",
+        "StationLongitude": "121.563",
+        "StationLatitude": "23.973",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "壽豐鄉",
+        "TownCode": "1001506",
+        "StationLongitude": "121.509",
+        "StationLatitude": "23.873",
+        "StationIntensity": "3級"
+       },
+       {
+        "TownName": "富里鄉",
+        "TownCode": "1001510",
+        "StationLongitude": "121.250",
+        "StationLatitude": "23.180",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "新城鄉",
+        "TownCode": "1001504",
+        "StationLongitude": "121.604",
+        "StationLatitude": "24.040",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "玉里鎮",
+        "TownCode": "1001503",
+        "StationLongitude": "121.315",
+        "StationLatitude": "23.336",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "瑞穗鄉",
+        "TownCode": "1001509",
+        "StationLongitude": "121.376",
+        "StationLatitude": "23.497",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "秀林鄉",
+        "TownCode": "1001511",
+        "StationLongitude": "121.625",
+        "StationLatitude": "24.119",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "花蓮市",
+        "TownCode": "1001501",
+        "StationLongitude": "121.607",
+        "StationLatitude": "23.982",
+        "StationIntensity": "3級"
+       },
+       {
+        "TownName": "萬榮鄉",
+        "TownCode": "1001512",
+        "StationLongitude": "121.411",
+        "StationLatitude": "23.715",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "豐濱鄉",
+        "TownCode": "1001508",
+        "StationLongitude": "121.521",
+        "StationLatitude": "23.601",
+        "StationIntensity": "2級"
+       },
+       {
+        "TownName": "鳳林鎮",
+        "TownCode": "1001502",
+        "StationLongitude": "121.452",
+        "StationLatitude": "23.745",
+        "StationIntensity": "1級"
+       }
+      ]
+     },
+     {
+      "CountyName": "臺東縣",
+      "CountyCode": "10014",
+      "CountyMaxIntensity": "1級",
+      "TownNumber": "16",
+      "Town": [
+       {
+        "TownName": "卑南鄉",
+        "TownCode": "1001404",
+        "StationLongitude": "121.087",
+        "StationLatitude": "22.783",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "大武鄉",
+        "TownCode": "1001410",
+        "StationLongitude": "120.890",
+        "StationLatitude": "22.341",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "太麻里鄉",
+        "TownCode": "1001409",
+        "StationLongitude": "121.008",
+        "StationLatitude": "22.616",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "延平鄉",
+        "TownCode": "1001413",
+        "StationLongitude": "121.086",
+        "StationLatitude": "22.903",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "成功鎮",
+        "TownCode": "1001402",
+        "StationLongitude": "121.381",
+        "StationLatitude": "23.105",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東河鄉",
+        "TownCode": "1001407",
+        "StationLongitude": "121.303",
+        "StationLatitude": "22.969",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "池上鄉",
+        "TownCode": "1001406",
+        "StationLongitude": "121.215",
+        "StationLatitude": "23.122",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "海端鄉",
+        "TownCode": "1001412",
+        "StationLongitude": "121.177",
+        "StationLatitude": "23.102",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "綠島鄉",
+        "TownCode": "1001411",
+        "StationLongitude": "121.468",
+        "StationLatitude": "22.669",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "臺東市",
+        "TownCode": "1001401",
+        "StationLongitude": "121.147",
+        "StationLatitude": "22.755",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "蘭嶼鄉",
+        "TownCode": "1001416",
+        "StationLongitude": "121.556",
+        "StationLatitude": "22.025",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "達仁鄉",
+        "TownCode": "1001415",
+        "StationLongitude": "120.883",
+        "StationLatitude": "22.297",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "金峰鄉",
+        "TownCode": "1001414",
+        "StationLongitude": "120.961",
+        "StationLatitude": "22.595",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "長濱鄉",
+        "TownCode": "1001408",
+        "StationLongitude": "121.451",
+        "StationLatitude": "23.315",
+        "StationIntensity": "1級"
+       },
+       {
+        "TownName": "關山鎮",
+        "TownCode": "1001403",
+        "StationLongitude": "121.163",
+        "StationLatitude": "23.047",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "鹿野鄉",
+        "TownCode": "1001405",
+        "StationLongitude": "121.152",
+        "StationLatitude": "22.939",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "澎湖縣",
+      "CountyCode": "10016",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "6",
+      "Town": [
+       {
+        "TownName": "七美鄉",
+        "TownCode": "1001606",
+        "StationLongitude": "119.424",
+        "StationLatitude": "23.207",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "望安鄉",
+        "TownCode": "1001605",
+        "StationLongitude": "119.500",
+        "StationLatitude": "23.358",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "湖西鄉",
+        "TownCode": "1001602",
+        "StationLongitude": "119.653",
+        "StationLatitude": "23.584",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "白沙鄉",
+        "TownCode": "1001603",
+        "StationLongitude": "119.599",
+        "StationLatitude": "23.667",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "西嶼鄉",
+        "TownCode": "1001604",
+        "StationLongitude": "119.507",
+        "StationLatitude": "23.601",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "馬公市",
+        "TownCode": "1001601",
+        "StationLongitude": "119.579",
+        "StationLatitude": "23.566",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "金門縣",
+      "CountyCode": "09020",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "6",
+      "Town": [
+       {
+        "TownName": "烈嶼鄉",
+        "TownCode": "0902005",
+        "StationLongitude": "118.245",
+        "StationLatitude": "24.430",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "烏坵鄉",
+        "TownCode": "0902006",
+        "StationLongitude": "119.453",
+        "StationLatitude": "24.989",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "金城鎮",
+        "TownCode": "0902001",
+        "StationLongitude": "118.321",
+        "StationLatitude": "24.433",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "金寧鄉",
+        "TownCode": "0902004",
+        "StationLongitude": "118.335",
+        "StationLatitude": "24.451",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "金沙鎮",
+        "TownCode": "0902002",
+        "StationLongitude": "118.413",
+        "StationLatitude": "24.489",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "金湖鎮",
+        "TownCode": "0902003",
+        "StationLongitude": "118.417",
+        "StationLatitude": "24.441",
+        "StationIntensity": "0級"
+       }
+      ]
+     },
+     {
+      "CountyName": "連江縣",
+      "CountyCode": "09007",
+      "CountyMaxIntensity": "0級",
+      "TownNumber": "4",
+      "Town": [
+       {
+        "TownName": "北竿鄉",
+        "TownCode": "0900702",
+        "StationLongitude": "119.997",
+        "StationLatitude": "26.225",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "南竿鄉",
+        "TownCode": "0900701",
+        "StationLongitude": "119.939",
+        "StationLatitude": "26.153",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "東引鄉",
+        "TownCode": "0900704",
+        "StationLongitude": "120.490",
+        "StationLatitude": "26.367",
+        "StationIntensity": "0級"
+       },
+       {
+        "TownName": "莒光鄉",
+        "TownCode": "0900703",
+        "StationLongitude": "119.935",
+        "StationLatitude": "25.970",
+        "StationIntensity": "0級"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ }
+}
